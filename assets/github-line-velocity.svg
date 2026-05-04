@@ -24,7 +24,6 @@
 <line x1="54" y1="276" x2="560" y2="276" class="line"/>
 <text x="54" y="302" class="tag">&lt;/table&gt;</text>
 
-<text x="628" y="125" class="tag">&lt;languages json="hidden"&gt;</text>
 <text x="648" y="163" class="body">TypeScript </text><text x="774" y="163" class="body">  314,249</text><text x="884" y="163" class="body">33.2%</text><rect x="955" y="153" width="180" height="10" fill="#111111"/>
 <text x="648" y="185" class="body">Python     </text><text x="774" y="185" class="body">  186,839</text><text x="884" y="185" class="body">19.8%</text><rect x="955" y="175" width="107" height="10" fill="#111111"/>
 <text x="648" y="207" class="body">JavaScript </text><text x="774" y="207" class="body">  152,639</text><text x="884" y="207" class="body">16.1%</text><rect x="955" y="197" width="87" height="10" fill="#111111"/>
@@ -33,7 +32,6 @@
 <text x="648" y="273" class="body">Other      </text><text x="774" y="273" class="body">    4,753</text><text x="884" y="273" class="body"> 0.5%</text><rect x="955" y="263" width="4" height="10" fill="#111111"/>
 <text x="648" y="295" class="body">HTML       </text><text x="774" y="295" class="body">    3,159</text><text x="884" y="295" class="body"> 0.3%</text><rect x="955" y="285" width="4" height="10" fill="#111111"/>
 <text x="648" y="317" class="body">Dockerfile </text><text x="774" y="317" class="body">      877</text><text x="884" y="317" class="body"> 0.1%</text><rect x="955" y="307" width="4" height="10" fill="#111111"/>
-<text x="628" y="376" class="tag">&lt;/languages&gt;</text>
 
 <text x="54" y="282" class="muted">may</text>
 <text x="106" y="282" class="muted">jun</text>
