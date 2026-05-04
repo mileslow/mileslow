@@ -22,7 +22,6 @@
 <text x="620" y="144" class="body">claude 4-sonnet</text><text x="840" y="144" class="body">10.4%</text><rect x="900" y="134" width="52" height="9" fill="#111"/>
 <text x="620" y="164" class="body">gpt 5.3-codex</text><text x="840" y="164" class="body">6.3%</text><rect x="900" y="154" width="31" height="9" fill="#111"/>
 <text x="620" y="184" class="body">other models</text><text x="840" y="184" class="body">27.0%</text><rect x="900" y="174" width="135" height="9" fill="#111"/>
-<text x="54" y="196" class="body">daily additions</text>
 <line x1="54" y1="284" x2="964" y2="284" class="axis"/>
 <line x1="54.0" y1="284" x2="54.0" y2="236.7" class="bar"><title>2025-05-04: 1,910 additions</title></line>
 <line x1="59.0" y1="284" x2="59.0" y2="235.3" class="bar"><title>2025-05-06: 2,379 additions</title></line>
