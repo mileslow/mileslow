@@ -10,7 +10,7 @@
 
 ## GitHub Code Velocity
 
-Last 365 days. Includes code, `.json`, and `.jsonl`. Excludes `package.json`, docs, text dumps, SVGs, model files, locks, build output, media, and generated assets.
+Last 365 days. Excludes `package.json`, docs, text dumps, SVGs, model files, locks, build output, media, and generated assets.
 
 `945,347` lines added · `3,433` commits · `299` active days · `257.6K` biggest day
 
