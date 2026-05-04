@@ -1,806 +1,533 @@
-<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-<title id="title">Miles Low last-365-day code velocity</title>
-<desc id="desc">Daily code line additions for Miles Low over the last 365 days, excluding non-code artifact and document files.</desc>
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
-    <stop stop-color="#07111f"/>
-    <stop offset="0.52" stop-color="#0c1830"/>
-    <stop offset="1" stop-color="#07151a"/>
-  </linearGradient>
-  <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 130) rotate(132) scale(520 260)">
-    <stop stop-color="#25f6c9" stop-opacity="0.35"/>
-    <stop offset="1" stop-color="#25f6c9" stop-opacity="0"/>
-  </radialGradient>
-  <style>
-    .title { font: 800 43px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #f8fbff; letter-spacing: -1px; }
-    .subtitle { font: 500 16px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #a8bad4; }
-    .metric { font: 800 31px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #ffffff; }
-    .label { font: 650 12px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #7f95b2; letter-spacing: 1.8px; text-transform: uppercase; }
-    .tiny { font: 600 11px ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #7389a8; }
-    .axis { stroke: #273653; stroke-width: 1; }
-  </style>
-</defs>
-<rect width="1200" height="520" rx="28" fill="url(#bg)"/>
-<rect width="1200" height="520" rx="28" fill="url(#glow)"/>
-<path d="M50 92C190 24 311 35 444 79C577 123 681 135 817 77C947 21 1059 43 1150 82" stroke="#65f3c8" stroke-opacity="0.16" stroke-width="2"/>
-<text x="56" y="73" class="title">697K code lines in 365 days</text>
-<text x="58" y="103" class="subtitle">Daily GitHub velocity, filtered to code files only</text>
+<svg width="1100" height="500" viewBox="0 0 1100 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Miles Low code velocity, raw view</title>
+<desc id="desc">A plain HTML-style daily additions graph for the last 365 days, with JSON and JSONL included but package.json excluded.</desc>
+<style>
+  text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; fill: #111; }
+  .tag { font-size: 15px; }
+  .h1 { font-size: 28px; font-weight: 700; }
+  .body { font-size: 15px; }
+  .muted { font-size: 12px; fill: #666; }
+  .num { font-size: 19px; font-weight: 700; }
+  .line { stroke: #111; stroke-width: 1; shape-rendering: crispEdges; }
+</style>
+<rect width="1100" height="500" fill="#fff"/>
+<text x="28" y="34" class="tag">&lt;section id="github-code-velocity"&gt;</text>
+<text x="54" y="76" class="h1">945.3K lines / last 365 days</text>
+<text x="54" y="105" class="body">included: code + json + jsonl // excluded: package.json, docs, media, models, locks, build output</text>
+<text x="54" y="130" class="body">source: authored commits on accessible default branches</text>
 
-<g transform="translate(56 130)">
-  <rect width="250" height="58" rx="16" fill="#101c30" stroke="#22314e"/>
-  <text x="18" y="24" class="label">Code Additions</text>
-  <text x="18" y="50" class="metric">697K</text>
-</g>
-<g transform="translate(326 130)">
-  <rect width="250" height="58" rx="16" fill="#101c30" stroke="#22314e"/>
-  <text x="18" y="24" class="label">Commits</text>
-  <text x="18" y="50" class="metric">3,433</text>
-</g>
-<g transform="translate(596 130)">
-  <rect width="250" height="58" rx="16" fill="#101c30" stroke="#22314e"/>
-  <text x="18" y="24" class="label">Active Days</text>
-  <text x="18" y="50" class="metric">299</text>
-</g>
-<g transform="translate(866 130)">
-  <rect width="278" height="58" rx="16" fill="#101c30" stroke="#22314e"/>
-  <text x="18" y="24" class="label">Best Day</text>
-  <text x="18" y="50" class="metric">33.8K</text>
-</g>
+<text x="54" y="170" class="tag">&lt;table&gt;</text>
+<line x1="54" y1="184" x2="560" y2="184" class="line"/>
+<text x="72" y="208" class="body">lines added</text><text x="300" y="208" class="num">945,347</text>
+<text x="72" y="235" class="body">commits counted</text><text x="300" y="235" class="num">3,433</text>
+<text x="72" y="262" class="body">active days</text><text x="300" y="262" class="num">299</text>
+<text x="72" y="289" class="body">biggest day</text><text x="300" y="289" class="num">257.6K (2026-04-15)</text>
+<line x1="54" y1="306" x2="560" y2="306" class="line"/>
+<text x="54" y="332" class="tag">&lt;/table&gt;</text>
 
-<text x="56" y="190" class="label">Last 365 Days, One Square Per Day</text>
-<text x="56" y="195" class="tiny">May</text>
-<text x="116" y="195" class="tiny">Jun</text>
-<text x="191" y="195" class="tiny">Jul</text>
-<text x="251" y="195" class="tiny">Aug</text>
-<text x="326" y="195" class="tiny">Sep</text>
-<text x="386" y="195" class="tiny">Oct</text>
-<text x="446" y="195" class="tiny">Nov</text>
-<text x="521" y="195" class="tiny">Dec</text>
-<text x="581" y="195" class="tiny">Jan</text>
-<text x="641" y="195" class="tiny">Feb</text>
-<text x="701" y="195" class="tiny">Mar</text>
-<text x="776" y="195" class="tiny">Apr</text>
-<text x="836" y="195" class="tiny">May</text>
-<rect x="56" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-04: 1,910 code additions, 15 commits</title></rect>
-<rect x="56" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-05: 1,733 code additions, 23 commits</title></rect>
-<rect x="56" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-06: 2,379 code additions, 21 commits</title></rect>
-<rect x="56" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-07: 1,368 code additions, 25 commits</title></rect>
-<rect x="56" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-08: 1,360 code additions, 24 commits</title></rect>
-<rect x="56" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-09: 531 code additions, 25 commits</title></rect>
-<rect x="56" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-05-10: 0 code additions, 9 commits</title></rect>
-<rect x="71" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-11: 2,379 code additions, 4 commits</title></rect>
-<rect x="71" y="220" width="11" height="11" rx="3" fill="#172033"><title>2025-05-12: 0 code additions, 0 commits</title></rect>
-<rect x="71" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-05-13: 4,378 code additions, 4 commits</title></rect>
-<rect x="71" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-14: 2,380 code additions, 5 commits</title></rect>
-<rect x="71" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-15: 3,090 code additions, 5 commits</title></rect>
-<rect x="71" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-16: 3,061 code additions, 22 commits</title></rect>
-<rect x="71" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-05-17: 220 code additions, 19 commits</title></rect>
-<rect x="86" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-18: 2,781 code additions, 5 commits</title></rect>
-<rect x="86" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2025-05-19: 434 code additions, 15 commits</title></rect>
-<rect x="86" y="235" width="11" height="11" rx="3" fill="#135c78"><title>2025-05-20: 59 code additions, 15 commits</title></rect>
-<rect x="86" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-21: 1,003 code additions, 29 commits</title></rect>
-<rect x="86" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2025-05-22: 140 code additions, 20 commits</title></rect>
-<rect x="86" y="280" width="11" height="11" rx="3" fill="#135c78"><title>2025-05-23: 57 code additions, 3 commits</title></rect>
-<rect x="86" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-05-24: 491 code additions, 8 commits</title></rect>
-<rect x="101" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-25: 1,845 code additions, 13 commits</title></rect>
-<rect x="101" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-26: 921 code additions, 10 commits</title></rect>
-<rect x="101" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-05-27: 15,362 code additions, 25 commits</title></rect>
-<rect x="101" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-28: 3,190 code additions, 15 commits</title></rect>
-<rect x="101" y="265" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-05-29: 7,105 code additions, 27 commits</title></rect>
-<rect x="101" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-05-30: 1,850 code additions, 12 commits</title></rect>
-<rect x="101" y="295" width="11" height="11" rx="3" fill="#135c78"><title>2025-05-31: 31 code additions, 1 commits</title></rect>
-<rect x="116" y="205" width="11" height="11" rx="3" fill="#135c78"><title>2025-06-01: 23 code additions, 2 commits</title></rect>
-<rect x="116" y="220" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-06-02: 5,860 code additions, 24 commits</title></rect>
-<rect x="116" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-06-03: 11,835 code additions, 28 commits</title></rect>
-<rect x="116" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-04: 2,149 code additions, 19 commits</title></rect>
-<rect x="116" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-05: 2,345 code additions, 19 commits</title></rect>
-<rect x="116" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-06: 2,288 code additions, 10 commits</title></rect>
-<rect x="116" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-06-07: 514 code additions, 5 commits</title></rect>
-<rect x="131" y="205" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-06-08: 4,506 code additions, 12 commits</title></rect>
-<rect x="131" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2025-06-09: 365 code additions, 28 commits</title></rect>
-<rect x="131" y="235" width="11" height="11" rx="3" fill="#128da0"><title>2025-06-10: 385 code additions, 12 commits</title></rect>
-<rect x="131" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-11: 2,381 code additions, 9 commits</title></rect>
-<rect x="131" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-12: 994 code additions, 26 commits</title></rect>
-<rect x="131" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-13: 536 code additions, 2 commits</title></rect>
-<rect x="131" y="295" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-14: 780 code additions, 17 commits</title></rect>
-<rect x="146" y="205" width="11" height="11" rx="3" fill="#128da0"><title>2025-06-15: 500 code additions, 6 commits</title></rect>
-<rect x="146" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-16: 2,767 code additions, 39 commits</title></rect>
-<rect x="146" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-17: 2,659 code additions, 19 commits</title></rect>
-<rect x="146" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-18: 1,078 code additions, 16 commits</title></rect>
-<rect x="146" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2025-06-19: 143 code additions, 8 commits</title></rect>
-<rect x="146" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2025-06-20: 397 code additions, 10 commits</title></rect>
-<rect x="146" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-06-21: 79 code additions, 5 commits</title></rect>
-<rect x="161" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-22: 617 code additions, 21 commits</title></rect>
-<rect x="161" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-23: 582 code additions, 19 commits</title></rect>
-<rect x="161" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-24: 2,127 code additions, 15 commits</title></rect>
-<rect x="161" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-25: 1,889 code additions, 24 commits</title></rect>
-<rect x="161" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-26: 1,535 code additions, 30 commits</title></rect>
-<rect x="161" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-27: 988 code additions, 37 commits</title></rect>
-<rect x="161" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-06-28: 94 code additions, 3 commits</title></rect>
-<rect x="176" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-29: 529 code additions, 6 commits</title></rect>
-<rect x="176" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-06-30: 1,296 code additions, 18 commits</title></rect>
-<rect x="176" y="235" width="11" height="11" rx="3" fill="#128da0"><title>2025-07-01: 391 code additions, 15 commits</title></rect>
-<rect x="176" y="250" width="11" height="11" rx="3" fill="#128da0"><title>2025-07-02: 453 code additions, 14 commits</title></rect>
-<rect x="176" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2025-07-03: 258 code additions, 7 commits</title></rect>
-<rect x="176" y="280" width="11" height="11" rx="3" fill="#172033"><title>2025-07-04: 0 code additions, 0 commits</title></rect>
-<rect x="176" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-07-05: 0 code additions, 0 commits</title></rect>
-<rect x="191" y="205" width="11" height="11" rx="3" fill="#135c78"><title>2025-07-06: 14 code additions, 1 commits</title></rect>
-<rect x="191" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-07: 545 code additions, 18 commits</title></rect>
-<rect x="191" y="235" width="11" height="11" rx="3" fill="#128da0"><title>2025-07-08: 264 code additions, 25 commits</title></rect>
-<rect x="191" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-09: 569 code additions, 16 commits</title></rect>
-<rect x="191" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-10: 1,198 code additions, 2 commits</title></rect>
-<rect x="191" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-11: 659 code additions, 13 commits</title></rect>
-<rect x="191" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-07-12: 93 code additions, 1 commits</title></rect>
-<rect x="206" y="205" width="11" height="11" rx="3" fill="#135c78"><title>2025-07-13: 60 code additions, 6 commits</title></rect>
-<rect x="206" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-14: 1,127 code additions, 4 commits</title></rect>
-<rect x="206" y="235" width="11" height="11" rx="3" fill="#135c78"><title>2025-07-15: 15 code additions, 2 commits</title></rect>
-<rect x="206" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-16: 1,612 code additions, 19 commits</title></rect>
-<rect x="206" y="265" width="11" height="11" rx="3" fill="#14324d"><title>2025-07-17: 3 code additions, 1 commits</title></rect>
-<rect x="206" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-18: 706 code additions, 3 commits</title></rect>
-<rect x="206" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-07-19: 0 code additions, 0 commits</title></rect>
-<rect x="221" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-07-20: 0 code additions, 0 commits</title></rect>
-<rect x="221" y="220" width="11" height="11" rx="3" fill="#172033"><title>2025-07-21: 0 code additions, 0 commits</title></rect>
-<rect x="221" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-22: 3,029 code additions, 12 commits</title></rect>
-<rect x="221" y="250" width="11" height="11" rx="3" fill="#128da0"><title>2025-07-23: 298 code additions, 8 commits</title></rect>
-<rect x="221" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2025-07-24: 244 code additions, 7 commits</title></rect>
-<rect x="221" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2025-07-25: 292 code additions, 7 commits</title></rect>
-<rect x="221" y="295" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-26: 920 code additions, 2 commits</title></rect>
-<rect x="236" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-07-27: 0 code additions, 0 commits</title></rect>
-<rect x="236" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-07-28: 1,802 code additions, 18 commits</title></rect>
-<rect x="236" y="235" width="11" height="11" rx="3" fill="#172033"><title>2025-07-29: 0 code additions, 0 commits</title></rect>
-<rect x="236" y="250" width="11" height="11" rx="3" fill="#135c78"><title>2025-07-30: 44 code additions, 6 commits</title></rect>
-<rect x="236" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2025-07-31: 406 code additions, 20 commits</title></rect>
-<rect x="236" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2025-08-01: 239 code additions, 3 commits</title></rect>
-<rect x="236" y="295" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-02: 2,185 code additions, 14 commits</title></rect>
-<rect x="251" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-08-03: 0 code additions, 0 commits</title></rect>
-<rect x="251" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-04: 2,449 code additions, 12 commits</title></rect>
-<rect x="251" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-08-05: 5,201 code additions, 28 commits</title></rect>
-<rect x="251" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-06: 2,112 code additions, 14 commits</title></rect>
-<rect x="251" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-07: 1,218 code additions, 13 commits</title></rect>
-<rect x="251" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-08: 1,739 code additions, 7 commits</title></rect>
-<rect x="251" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-08-09: 0 code additions, 0 commits</title></rect>
-<rect x="266" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-08-10: 0 code additions, 0 commits</title></rect>
-<rect x="266" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-11: 741 code additions, 3 commits</title></rect>
-<rect x="266" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-12: 1,962 code additions, 32 commits</title></rect>
-<rect x="266" y="250" width="11" height="11" rx="3" fill="#128da0"><title>2025-08-13: 183 code additions, 14 commits</title></rect>
-<rect x="266" y="265" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-08-14: 6,339 code additions, 11 commits</title></rect>
-<rect x="266" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-15: 3,006 code additions, 15 commits</title></rect>
-<rect x="266" y="295" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-16: 1,148 code additions, 12 commits</title></rect>
-<rect x="281" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-08-17: 0 code additions, 0 commits</title></rect>
-<rect x="281" y="220" width="11" height="11" rx="3" fill="#135c78"><title>2025-08-18: 56 code additions, 1 commits</title></rect>
-<rect x="281" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-19: 1,409 code additions, 22 commits</title></rect>
-<rect x="281" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-20: 3,217 code additions, 34 commits</title></rect>
-<rect x="281" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-21: 2,082 code additions, 20 commits</title></rect>
-<rect x="281" y="280" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-08-22: 4,868 code additions, 13 commits</title></rect>
-<rect x="281" y="295" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-08-23: 10,069 code additions, 12 commits</title></rect>
-<rect x="296" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-08-24: 0 code additions, 0 commits</title></rect>
-<rect x="296" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-25: 2,309 code additions, 17 commits</title></rect>
-<rect x="296" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-26: 1,058 code additions, 14 commits</title></rect>
-<rect x="296" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-27: 3,603 code additions, 9 commits</title></rect>
-<rect x="296" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-28: 1,175 code additions, 5 commits</title></rect>
-<rect x="296" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-08-29: 3,406 code additions, 4 commits</title></rect>
-<rect x="296" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-08-30: 336 code additions, 1 commits</title></rect>
-<rect x="311" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-08-31: 0 code additions, 0 commits</title></rect>
-<rect x="311" y="220" width="11" height="11" rx="3" fill="#172033"><title>2025-09-01: 0 code additions, 0 commits</title></rect>
-<rect x="311" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-02: 3,217 code additions, 12 commits</title></rect>
-<rect x="311" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-03: 1,470 code additions, 12 commits</title></rect>
-<rect x="311" y="265" width="11" height="11" rx="3" fill="#172033"><title>2025-09-04: 0 code additions, 0 commits</title></rect>
-<rect x="311" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-05: 2,691 code additions, 1 commits</title></rect>
-<rect x="311" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-09-06: 0 code additions, 1 commits</title></rect>
-<rect x="326" y="205" width="11" height="11" rx="3" fill="#135c78"><title>2025-09-07: 21 code additions, 1 commits</title></rect>
-<rect x="326" y="220" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-09-08: 6,868 code additions, 6 commits</title></rect>
-<rect x="326" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-09: 1,659 code additions, 5 commits</title></rect>
-<rect x="326" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-10: 1,086 code additions, 5 commits</title></rect>
-<rect x="326" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-11: 970 code additions, 6 commits</title></rect>
-<rect x="326" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-12: 2,143 code additions, 3 commits</title></rect>
-<rect x="326" y="295" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-09-13: 5,042 code additions, 2 commits</title></rect>
-<rect x="341" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-14: 1,147 code additions, 1 commits</title></rect>
-<rect x="341" y="220" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-09-15: 11,867 code additions, 21 commits</title></rect>
-<rect x="341" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-16: 2,181 code additions, 9 commits</title></rect>
-<rect x="341" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-17: 991 code additions, 14 commits</title></rect>
-<rect x="341" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-18: 896 code additions, 12 commits</title></rect>
-<rect x="341" y="280" width="11" height="11" rx="3" fill="#135c78"><title>2025-09-19: 63 code additions, 6 commits</title></rect>
-<rect x="341" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-09-20: 152 code additions, 2 commits</title></rect>
-<rect x="356" y="205" width="11" height="11" rx="3" fill="#135c78"><title>2025-09-21: 18 code additions, 5 commits</title></rect>
-<rect x="356" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-22: 2,564 code additions, 9 commits</title></rect>
-<rect x="356" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-23: 736 code additions, 11 commits</title></rect>
-<rect x="356" y="250" width="11" height="11" rx="3" fill="#172033"><title>2025-09-24: 0 code additions, 1 commits</title></rect>
-<rect x="356" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-25: 965 code additions, 2 commits</title></rect>
-<rect x="356" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-09-26: 1,113 code additions, 5 commits</title></rect>
-<rect x="356" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-09-27: 0 code additions, 0 commits</title></rect>
-<rect x="371" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-09-28: 0 code additions, 0 commits</title></rect>
-<rect x="371" y="220" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-09-29: 4,720 code additions, 12 commits</title></rect>
-<rect x="371" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-09-30: 7,174 code additions, 23 commits</title></rect>
-<rect x="371" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-10-01: 4,172 code additions, 8 commits</title></rect>
-<rect x="371" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2025-10-02: 99 code additions, 1 commits</title></rect>
-<rect x="371" y="280" width="11" height="11" rx="3" fill="#172033"><title>2025-10-03: 0 code additions, 0 commits</title></rect>
-<rect x="371" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-10-04: 0 code additions, 0 commits</title></rect>
-<rect x="386" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-10-05: 0 code additions, 0 commits</title></rect>
-<rect x="386" y="220" width="11" height="11" rx="3" fill="#172033"><title>2025-10-06: 0 code additions, 0 commits</title></rect>
-<rect x="386" y="235" width="11" height="11" rx="3" fill="#172033"><title>2025-10-07: 0 code additions, 0 commits</title></rect>
-<rect x="386" y="250" width="11" height="11" rx="3" fill="#172033"><title>2025-10-08: 0 code additions, 0 commits</title></rect>
-<rect x="386" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2025-10-09: 93 code additions, 10 commits</title></rect>
-<rect x="386" y="280" width="11" height="11" rx="3" fill="#135c78"><title>2025-10-10: 48 code additions, 1 commits</title></rect>
-<rect x="386" y="295" width="11" height="11" rx="3" fill="#135c78"><title>2025-10-11: 22 code additions, 1 commits</title></rect>
-<rect x="401" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-10-12: 0 code additions, 0 commits</title></rect>
-<rect x="401" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2025-10-13: 171 code additions, 3 commits</title></rect>
-<rect x="401" y="235" width="11" height="11" rx="3" fill="#135c78"><title>2025-10-14: 62 code additions, 3 commits</title></rect>
-<rect x="401" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-10-15: 2,706 code additions, 7 commits</title></rect>
-<rect x="401" y="265" width="11" height="11" rx="3" fill="#172033"><title>2025-10-16: 0 code additions, 0 commits</title></rect>
-<rect x="401" y="280" width="11" height="11" rx="3" fill="#135c78"><title>2025-10-17: 23 code additions, 2 commits</title></rect>
-<rect x="401" y="295" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-10-18: 10,837 code additions, 2 commits</title></rect>
-<rect x="416" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-10-19: 0 code additions, 0 commits</title></rect>
-<rect x="416" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-10-20: 1,763 code additions, 7 commits</title></rect>
-<rect x="416" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-10-21: 4,824 code additions, 5 commits</title></rect>
-<rect x="416" y="250" width="11" height="11" rx="3" fill="#128da0"><title>2025-10-22: 520 code additions, 3 commits</title></rect>
-<rect x="416" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-10-23: 611 code additions, 10 commits</title></rect>
-<rect x="416" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-10-24: 1,652 code additions, 6 commits</title></rect>
-<rect x="416" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-10-25: 0 code additions, 0 commits</title></rect>
-<rect x="431" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-10-26: 0 code additions, 0 commits</title></rect>
-<rect x="431" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-10-27: 4,151 code additions, 36 commits</title></rect>
-<rect x="431" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-10-28: 8,638 code additions, 26 commits</title></rect>
-<rect x="431" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-10-29: 2,953 code additions, 18 commits</title></rect>
-<rect x="431" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-10-30: 1,370 code additions, 17 commits</title></rect>
-<rect x="431" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-10-31: 1,182 code additions, 15 commits</title></rect>
-<rect x="431" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-11-01: 0 code additions, 0 commits</title></rect>
-<rect x="446" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-11-02: 0 code additions, 0 commits</title></rect>
-<rect x="446" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-11-03: 850 code additions, 43 commits</title></rect>
-<rect x="446" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-04: 4,671 code additions, 19 commits</title></rect>
-<rect x="446" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-11-05: 2,553 code additions, 14 commits</title></rect>
-<rect x="446" y="265" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-06: 8,478 code additions, 9 commits</title></rect>
-<rect x="446" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-11-07: 3,627 code additions, 15 commits</title></rect>
-<rect x="446" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-11-08: 99 code additions, 7 commits</title></rect>
-<rect x="461" y="205" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-09: 12,049 code additions, 6 commits</title></rect>
-<rect x="461" y="220" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-10: 5,553 code additions, 22 commits</title></rect>
-<rect x="461" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-11-11: 2,558 code additions, 38 commits</title></rect>
-<rect x="461" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-11-12: 1,460 code additions, 27 commits</title></rect>
-<rect x="461" y="265" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-13: 4,365 code additions, 40 commits</title></rect>
-<rect x="461" y="280" width="11" height="11" rx="3" fill="#172033"><title>2025-11-14: 0 code additions, 0 commits</title></rect>
-<rect x="461" y="295" width="11" height="11" rx="3" fill="#14324d"><title>2025-11-15: 1 code additions, 2 commits</title></rect>
-<rect x="476" y="205" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-16: 8,652 code additions, 13 commits</title></rect>
-<rect x="476" y="220" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-17: 4,443 code additions, 11 commits</title></rect>
-<rect x="476" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-11-18: 1,725 code additions, 22 commits</title></rect>
-<rect x="476" y="250" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-19: 7,151 code additions, 31 commits</title></rect>
-<rect x="476" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-11-20: 1,845 code additions, 16 commits</title></rect>
-<rect x="476" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2025-11-21: 299 code additions, 5 commits</title></rect>
-<rect x="476" y="295" width="11" height="11" rx="3" fill="#135c78"><title>2025-11-22: 34 code additions, 3 commits</title></rect>
-<rect x="491" y="205" width="11" height="11" rx="3" fill="#135c78"><title>2025-11-23: 9 code additions, 2 commits</title></rect>
-<rect x="491" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2025-11-24: 321 code additions, 7 commits</title></rect>
-<rect x="491" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-11-25: 3,944 code additions, 11 commits</title></rect>
-<rect x="491" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-11-26: 1,601 code additions, 2 commits</title></rect>
-<rect x="491" y="265" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-27: 6,040 code additions, 3 commits</title></rect>
-<rect x="491" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2025-11-28: 491 code additions, 2 commits</title></rect>
-<rect x="491" y="295" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-11-29: 6,544 code additions, 12 commits</title></rect>
-<rect x="506" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-11-30: 0 code additions, 0 commits</title></rect>
-<rect x="506" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-12-01: 1,349 code additions, 10 commits</title></rect>
-<rect x="506" y="235" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-02: 314 code additions, 12 commits</title></rect>
-<rect x="506" y="250" width="11" height="11" rx="3" fill="#135c78"><title>2025-12-03: 62 code additions, 4 commits</title></rect>
-<rect x="506" y="265" width="11" height="11" rx="3" fill="#9af7d7"><title>2025-12-04: 33,785 code additions, 22 commits</title></rect>
-<rect x="506" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-05: 271 code additions, 5 commits</title></rect>
-<rect x="506" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-06: 476 code additions, 3 commits</title></rect>
-<rect x="521" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-12-07: 0 code additions, 0 commits</title></rect>
-<rect x="521" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-08: 66 code additions, 6 commits</title></rect>
-<rect x="521" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-12-09: 1,024 code additions, 4 commits</title></rect>
-<rect x="521" y="250" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-10: 214 code additions, 7 commits</title></rect>
-<rect x="521" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-12-11: 812 code additions, 12 commits</title></rect>
-<rect x="521" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-12: 253 code additions, 8 commits</title></rect>
-<rect x="521" y="295" width="11" height="11" rx="3" fill="#172033"><title>2025-12-13: 0 code additions, 0 commits</title></rect>
-<rect x="536" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-12-14: 0 code additions, 0 commits</title></rect>
-<rect x="536" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-12-15: 605 code additions, 9 commits</title></rect>
-<rect x="536" y="235" width="11" height="11" rx="3" fill="#135c78"><title>2025-12-16: 53 code additions, 8 commits</title></rect>
-<rect x="536" y="250" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-17: 432 code additions, 12 commits</title></rect>
-<rect x="536" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-12-18: 1,607 code additions, 9 commits</title></rect>
-<rect x="536" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-19: 223 code additions, 9 commits</title></rect>
-<rect x="536" y="295" width="11" height="11" rx="3" fill="#14324d"><title>2025-12-20: 2 code additions, 1 commits</title></rect>
-<rect x="551" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-12-21: 0 code additions, 0 commits</title></rect>
-<rect x="551" y="220" width="11" height="11" rx="3" fill="#135c78"><title>2025-12-22: 19 code additions, 1 commits</title></rect>
-<rect x="551" y="235" width="11" height="11" rx="3" fill="#172033"><title>2025-12-23: 0 code additions, 0 commits</title></rect>
-<rect x="551" y="250" width="11" height="11" rx="3" fill="#172033"><title>2025-12-24: 0 code additions, 0 commits</title></rect>
-<rect x="551" y="265" width="11" height="11" rx="3" fill="#172033"><title>2025-12-25: 0 code additions, 0 commits</title></rect>
-<rect x="551" y="280" width="11" height="11" rx="3" fill="#172033"><title>2025-12-26: 0 code additions, 0 commits</title></rect>
-<rect x="551" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-27: 302 code additions, 7 commits</title></rect>
-<rect x="566" y="205" width="11" height="11" rx="3" fill="#172033"><title>2025-12-28: 0 code additions, 0 commits</title></rect>
-<rect x="566" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2025-12-29: 260 code additions, 10 commits</title></rect>
-<rect x="566" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2025-12-30: 780 code additions, 7 commits</title></rect>
-<rect x="566" y="250" width="11" height="11" rx="3" fill="#172033"><title>2025-12-31: 0 code additions, 0 commits</title></rect>
-<rect x="566" y="265" width="11" height="11" rx="3" fill="#172033"><title>2026-01-01: 0 code additions, 0 commits</title></rect>
-<rect x="566" y="280" width="11" height="11" rx="3" fill="#172033"><title>2026-01-02: 0 code additions, 0 commits</title></rect>
-<rect x="566" y="295" width="11" height="11" rx="3" fill="#172033"><title>2026-01-03: 0 code additions, 0 commits</title></rect>
-<rect x="581" y="205" width="11" height="11" rx="3" fill="#172033"><title>2026-01-04: 0 code additions, 0 commits</title></rect>
-<rect x="581" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-01-05: 3,139 code additions, 10 commits</title></rect>
-<rect x="581" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-01-06: 1,798 code additions, 20 commits</title></rect>
-<rect x="581" y="250" width="11" height="11" rx="3" fill="#135c78"><title>2026-01-07: 50 code additions, 3 commits</title></rect>
-<rect x="581" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2026-01-08: 432 code additions, 10 commits</title></rect>
-<rect x="581" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2026-01-09: 329 code additions, 6 commits</title></rect>
-<rect x="581" y="295" width="11" height="11" rx="3" fill="#172033"><title>2026-01-10: 0 code additions, 0 commits</title></rect>
-<rect x="596" y="205" width="11" height="11" rx="3" fill="#172033"><title>2026-01-11: 0 code additions, 1 commits</title></rect>
-<rect x="596" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2026-01-12: 313 code additions, 7 commits</title></rect>
-<rect x="596" y="235" width="11" height="11" rx="3" fill="#128da0"><title>2026-01-13: 287 code additions, 12 commits</title></rect>
-<rect x="596" y="250" width="11" height="11" rx="3" fill="#128da0"><title>2026-01-14: 411 code additions, 6 commits</title></rect>
-<rect x="596" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-01-15: 2,029 code additions, 7 commits</title></rect>
-<rect x="596" y="280" width="11" height="11" rx="3" fill="#135c78"><title>2026-01-16: 17 code additions, 1 commits</title></rect>
-<rect x="596" y="295" width="11" height="11" rx="3" fill="#135c78"><title>2026-01-17: 59 code additions, 2 commits</title></rect>
-<rect x="611" y="205" width="11" height="11" rx="3" fill="#172033"><title>2026-01-18: 0 code additions, 0 commits</title></rect>
-<rect x="611" y="220" width="11" height="11" rx="3" fill="#172033"><title>2026-01-19: 0 code additions, 0 commits</title></rect>
-<rect x="611" y="235" width="11" height="11" rx="3" fill="#172033"><title>2026-01-20: 0 code additions, 0 commits</title></rect>
-<rect x="611" y="250" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-01-21: 17,344 code additions, 5 commits</title></rect>
-<rect x="611" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2026-01-22: 235 code additions, 1 commits</title></rect>
-<rect x="611" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2026-01-23: 378 code additions, 9 commits</title></rect>
-<rect x="611" y="295" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-01-24: 5,021 code additions, 18 commits</title></rect>
-<rect x="626" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-01-25: 3,250 code additions, 30 commits</title></rect>
-<rect x="626" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2026-01-26: 124 code additions, 8 commits</title></rect>
-<rect x="626" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-01-27: 754 code additions, 8 commits</title></rect>
-<rect x="626" y="250" width="11" height="11" rx="3" fill="#135c78"><title>2026-01-28: 59 code additions, 10 commits</title></rect>
-<rect x="626" y="265" width="11" height="11" rx="3" fill="#135c78"><title>2026-01-29: 28 code additions, 7 commits</title></rect>
-<rect x="626" y="280" width="11" height="11" rx="3" fill="#172033"><title>2026-01-30: 0 code additions, 0 commits</title></rect>
-<rect x="626" y="295" width="11" height="11" rx="3" fill="#135c78"><title>2026-01-31: 18 code additions, 4 commits</title></rect>
-<rect x="641" y="205" width="11" height="11" rx="3" fill="#172033"><title>2026-02-01: 0 code additions, 0 commits</title></rect>
-<rect x="641" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2026-02-02: 471 code additions, 5 commits</title></rect>
-<rect x="641" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-02-03: 886 code additions, 12 commits</title></rect>
-<rect x="641" y="250" width="11" height="11" rx="3" fill="#135c78"><title>2026-02-04: 30 code additions, 3 commits</title></rect>
-<rect x="641" y="265" width="11" height="11" rx="3" fill="#172033"><title>2026-02-05: 0 code additions, 0 commits</title></rect>
-<rect x="641" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-02-06: 722 code additions, 9 commits</title></rect>
-<rect x="641" y="295" width="11" height="11" rx="3" fill="#172033"><title>2026-02-07: 0 code additions, 0 commits</title></rect>
-<rect x="656" y="205" width="11" height="11" rx="3" fill="#172033"><title>2026-02-08: 0 code additions, 0 commits</title></rect>
-<rect x="656" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2026-02-09: 102 code additions, 6 commits</title></rect>
-<rect x="656" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-02-10: 1,837 code additions, 17 commits</title></rect>
-<rect x="656" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-02-11: 576 code additions, 9 commits</title></rect>
-<rect x="656" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2026-02-12: 277 code additions, 23 commits</title></rect>
-<rect x="656" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2026-02-13: 294 code additions, 1 commits</title></rect>
-<rect x="656" y="295" width="11" height="11" rx="3" fill="#172033"><title>2026-02-14: 0 code additions, 0 commits</title></rect>
-<rect x="671" y="205" width="11" height="11" rx="3" fill="#172033"><title>2026-02-15: 0 code additions, 0 commits</title></rect>
-<rect x="671" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2026-02-16: 84 code additions, 15 commits</title></rect>
-<rect x="671" y="235" width="11" height="11" rx="3" fill="#128da0"><title>2026-02-17: 162 code additions, 14 commits</title></rect>
-<rect x="671" y="250" width="11" height="11" rx="3" fill="#128da0"><title>2026-02-18: 217 code additions, 7 commits</title></rect>
-<rect x="671" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-02-19: 2,916 code additions, 46 commits</title></rect>
-<rect x="671" y="280" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-02-20: 4,352 code additions, 73 commits</title></rect>
-<rect x="671" y="295" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-02-21: 649 code additions, 37 commits</title></rect>
-<rect x="686" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-02-22: 1,089 code additions, 24 commits</title></rect>
-<rect x="686" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-02-23: 888 code additions, 38 commits</title></rect>
-<rect x="686" y="235" width="11" height="11" rx="3" fill="#128da0"><title>2026-02-24: 252 code additions, 18 commits</title></rect>
-<rect x="686" y="250" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-02-25: 4,864 code additions, 15 commits</title></rect>
-<rect x="686" y="265" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-02-26: 5,123 code additions, 12 commits</title></rect>
-<rect x="686" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-02-27: 1,651 code additions, 16 commits</title></rect>
-<rect x="686" y="295" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-02-28: 6,065 code additions, 17 commits</title></rect>
-<rect x="701" y="205" width="11" height="11" rx="3" fill="#128da0"><title>2026-03-01: 467 code additions, 27 commits</title></rect>
-<rect x="701" y="220" width="11" height="11" rx="3" fill="#135c78"><title>2026-03-02: 33 code additions, 1 commits</title></rect>
-<rect x="701" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-03-03: 7,093 code additions, 8 commits</title></rect>
-<rect x="701" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-04: 3,654 code additions, 6 commits</title></rect>
-<rect x="701" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2026-03-05: 312 code additions, 19 commits</title></rect>
-<rect x="701" y="280" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-03-06: 14,983 code additions, 9 commits</title></rect>
-<rect x="701" y="295" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-07: 628 code additions, 1 commits</title></rect>
-<rect x="716" y="205" width="11" height="11" rx="3" fill="#135c78"><title>2026-03-08: 45 code additions, 3 commits</title></rect>
-<rect x="716" y="220" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-03-09: 4,272 code additions, 1 commits</title></rect>
-<rect x="716" y="235" width="11" height="11" rx="3" fill="#128da0"><title>2026-03-10: 246 code additions, 11 commits</title></rect>
-<rect x="716" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-11: 3,036 code additions, 2 commits</title></rect>
-<rect x="716" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2026-03-12: 64 code additions, 2 commits</title></rect>
-<rect x="716" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-13: 3,230 code additions, 1 commits</title></rect>
-<rect x="716" y="295" width="11" height="11" rx="3" fill="#172033"><title>2026-03-14: 0 code additions, 0 commits</title></rect>
-<rect x="731" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-15: 529 code additions, 1 commits</title></rect>
-<rect x="731" y="220" width="11" height="11" rx="3" fill="#128da0"><title>2026-03-16: 410 code additions, 5 commits</title></rect>
-<rect x="731" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-03-17: 28,313 code additions, 7 commits</title></rect>
-<rect x="731" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-18: 3,094 code additions, 22 commits</title></rect>
-<rect x="731" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-19: 533 code additions, 4 commits</title></rect>
-<rect x="731" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2026-03-20: 328 code additions, 4 commits</title></rect>
-<rect x="731" y="295" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-21: 608 code additions, 4 commits</title></rect>
-<rect x="746" y="205" width="11" height="11" rx="3" fill="#128da0"><title>2026-03-22: 221 code additions, 2 commits</title></rect>
-<rect x="746" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-23: 1,253 code additions, 14 commits</title></rect>
-<rect x="746" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-24: 869 code additions, 4 commits</title></rect>
-<rect x="746" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-25: 2,829 code additions, 12 commits</title></rect>
-<rect x="746" y="265" width="11" height="11" rx="3" fill="#172033"><title>2026-03-26: 0 code additions, 0 commits</title></rect>
-<rect x="746" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-27: 2,741 code additions, 10 commits</title></rect>
-<rect x="746" y="295" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-03-28: 11,627 code additions, 4 commits</title></rect>
-<rect x="761" y="205" width="11" height="11" rx="3" fill="#172033"><title>2026-03-29: 0 code additions, 0 commits</title></rect>
-<rect x="761" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-03-30: 893 code additions, 2 commits</title></rect>
-<rect x="761" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-03-31: 4,688 code additions, 10 commits</title></rect>
-<rect x="761" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-01: 2,029 code additions, 9 commits</title></rect>
-<rect x="761" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-02: 877 code additions, 9 commits</title></rect>
-<rect x="761" y="280" width="11" height="11" rx="3" fill="#128da0"><title>2026-04-03: 294 code additions, 5 commits</title></rect>
-<rect x="761" y="295" width="11" height="11" rx="3" fill="#172033"><title>2026-04-04: 0 code additions, 0 commits</title></rect>
-<rect x="776" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-05: 1,548 code additions, 2 commits</title></rect>
-<rect x="776" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-06: 3,383 code additions, 12 commits</title></rect>
-<rect x="776" y="235" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-04-07: 9,664 code additions, 13 commits</title></rect>
-<rect x="776" y="250" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-04-08: 25,248 code additions, 6 commits</title></rect>
-<rect x="776" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-09: 2,225 code additions, 3 commits</title></rect>
-<rect x="776" y="280" width="11" height="11" rx="3" fill="#172033"><title>2026-04-10: 0 code additions, 0 commits</title></rect>
-<rect x="776" y="295" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-11: 824 code additions, 1 commits</title></rect>
-<rect x="791" y="205" width="11" height="11" rx="3" fill="#172033"><title>2026-04-12: 0 code additions, 0 commits</title></rect>
-<rect x="791" y="220" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-04-13: 5,823 code additions, 10 commits</title></rect>
-<rect x="791" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-14: 644 code additions, 12 commits</title></rect>
-<rect x="791" y="250" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-04-15: 15,033 code additions, 8 commits</title></rect>
-<rect x="791" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-16: 3,057 code additions, 6 commits</title></rect>
-<rect x="791" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-17: 779 code additions, 2 commits</title></rect>
-<rect x="791" y="295" width="11" height="11" rx="3" fill="#172033"><title>2026-04-18: 0 code additions, 0 commits</title></rect>
-<rect x="806" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-19: 1,736 code additions, 1 commits</title></rect>
-<rect x="806" y="220" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-20: 3,665 code additions, 4 commits</title></rect>
-<rect x="806" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-21: 1,689 code additions, 7 commits</title></rect>
-<rect x="806" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-22: 4,066 code additions, 13 commits</title></rect>
-<rect x="806" y="265" width="11" height="11" rx="3" fill="#128da0"><title>2026-04-23: 247 code additions, 4 commits</title></rect>
-<rect x="806" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-24: 2,031 code additions, 9 commits</title></rect>
-<rect x="806" y="295" width="11" height="11" rx="3" fill="#172033"><title>2026-04-25: 0 code additions, 0 commits</title></rect>
-<rect x="821" y="205" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-26: 3,106 code additions, 17 commits</title></rect>
-<rect x="821" y="220" width="11" height="11" rx="3" fill="#9af7d7"><title>2026-04-27: 5,969 code additions, 18 commits</title></rect>
-<rect x="821" y="235" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-28: 1,979 code additions, 23 commits</title></rect>
-<rect x="821" y="250" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-29: 3,266 code additions, 27 commits</title></rect>
-<rect x="821" y="265" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-04-30: 1,298 code additions, 26 commits</title></rect>
-<rect x="821" y="280" width="11" height="11" rx="3" fill="#23c6b5"><title>2026-05-01: 2,042 code additions, 18 commits</title></rect>
-<rect x="821" y="295" width="11" height="11" rx="3" fill="#128da0"><title>2026-05-02: 290 code additions, 7 commits</title></rect>
-<rect x="836" y="205" width="11" height="11" rx="3" fill="#172033"><title>2026-05-03: 0 code additions, 0 commits</title></rect>
-<text x="56" y="356" class="tiny">Less</text>
-<rect x="91" y="347" width="11" height="11" rx="3" fill="#172033"/>
-<rect x="108" y="347" width="11" height="11" rx="3" fill="#14324d"/>
-<rect x="125" y="347" width="11" height="11" rx="3" fill="#135c78"/>
-<rect x="142" y="347" width="11" height="11" rx="3" fill="#128da0"/>
-<rect x="159" y="347" width="11" height="11" rx="3" fill="#23c6b5"/>
-<rect x="176" y="347" width="11" height="11" rx="3" fill="#9af7d7"/>
-<text x="196" y="356" class="tiny">More</text>
-
-<text x="56" y="379" class="label">Daily Code Additions, Log Scaled</text>
-<line x1="56" y1="462" x2="1144" y2="462" class="axis"/>
-<line x1="56.00" y1="409.83" x2="56.00" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-04: 1,910 code additions</title></line>
-<line x1="58.99" y1="410.50" x2="58.99" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-05: 1,733 code additions</title></line>
-<line x1="61.98" y1="408.32" x2="61.98" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-06: 2,379 code additions</title></line>
-<line x1="64.97" y1="412.14" x2="64.97" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-07: 1,368 code additions</title></line>
-<line x1="67.96" y1="412.18" x2="67.96" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-08: 1,360 code additions</title></line>
-<line x1="70.95" y1="418.66" x2="70.95" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-09: 531 code additions</title></line>
-<line x1="73.93" y1="462.00" x2="73.93" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-05-10: 0 code additions</title></line>
-<line x1="76.92" y1="408.32" x2="76.92" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-11: 2,379 code additions</title></line>
-<line x1="79.91" y1="462.00" x2="79.91" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-05-12: 0 code additions</title></line>
-<line x1="82.90" y1="404.11" x2="82.90" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-13: 4,378 code additions</title></line>
-<line x1="85.89" y1="408.31" x2="85.89" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-14: 2,380 code additions</title></line>
-<line x1="88.88" y1="406.51" x2="88.88" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-15: 3,090 code additions</title></line>
-<line x1="91.87" y1="406.58" x2="91.87" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-16: 3,061 code additions</title></line>
-<line x1="94.86" y1="424.73" x2="94.86" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-17: 220 code additions</title></line>
-<line x1="97.85" y1="407.24" x2="97.85" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-18: 2,781 code additions</title></line>
-<line x1="100.84" y1="420.05" x2="100.84" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-19: 434 code additions</title></line>
-<line x1="103.82" y1="433.73" x2="103.82" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-20: 59 code additions</title></line>
-<line x1="106.81" y1="414.28" x2="106.81" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-21: 1,003 code additions</title></line>
-<line x1="109.80" y1="427.83" x2="109.80" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-22: 140 code additions</title></line>
-<line x1="112.79" y1="433.96" x2="112.79" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-23: 57 code additions</title></line>
-<line x1="115.78" y1="419.20" x2="115.78" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-24: 491 code additions</title></line>
-<line x1="118.77" y1="410.07" x2="118.77" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-25: 1,845 code additions</title></line>
-<line x1="121.76" y1="414.87" x2="121.76" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-26: 921 code additions</title></line>
-<line x1="124.75" y1="395.44" x2="124.75" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-27: 15,362 code additions</title></line>
-<line x1="127.74" y1="406.29" x2="127.74" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-28: 3,190 code additions</title></line>
-<line x1="130.73" y1="400.77" x2="130.73" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-29: 7,105 code additions</title></line>
-<line x1="133.71" y1="410.05" x2="133.71" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-30: 1,850 code additions</title></line>
-<line x1="136.70" y1="438.07" x2="136.70" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-05-31: 31 code additions</title></line>
-<line x1="139.69" y1="440.06" x2="139.69" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-01: 23 code additions</title></line>
-<line x1="142.68" y1="402.10" x2="142.68" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-02: 5,860 code additions</title></line>
-<line x1="145.67" y1="397.24" x2="145.67" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-03: 11,835 code additions</title></line>
-<line x1="148.66" y1="409.02" x2="148.66" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-04: 2,149 code additions</title></line>
-<line x1="151.65" y1="408.42" x2="151.65" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-05: 2,345 code additions</title></line>
-<line x1="154.64" y1="408.59" x2="154.64" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-06: 2,288 code additions</title></line>
-<line x1="157.63" y1="418.89" x2="157.63" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-07: 514 code additions</title></line>
-<line x1="160.62" y1="403.91" x2="160.62" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-08: 4,506 code additions</title></line>
-<line x1="163.60" y1="421.24" x2="163.60" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-09: 365 code additions</title></line>
-<line x1="166.59" y1="420.88" x2="166.59" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-10: 385 code additions</title></line>
-<line x1="169.58" y1="408.31" x2="169.58" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-11: 2,381 code additions</title></line>
-<line x1="172.57" y1="414.34" x2="172.57" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-12: 994 code additions</title></line>
-<line x1="175.56" y1="418.60" x2="175.56" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-13: 536 code additions</title></line>
-<line x1="178.55" y1="416.01" x2="178.55" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-14: 780 code additions</title></line>
-<line x1="181.54" y1="419.08" x2="181.54" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-15: 500 code additions</title></line>
-<line x1="184.53" y1="407.27" x2="184.53" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-16: 2,767 code additions</title></line>
-<line x1="187.52" y1="407.55" x2="187.52" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-17: 2,659 code additions</title></line>
-<line x1="190.51" y1="413.78" x2="190.51" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-18: 1,078 code additions</title></line>
-<line x1="193.49" y1="427.69" x2="193.49" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-19: 143 code additions</title></line>
-<line x1="196.48" y1="420.67" x2="196.48" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-20: 397 code additions</title></line>
-<line x1="199.47" y1="431.74" x2="199.47" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-21: 79 code additions</title></line>
-<line x1="202.46" y1="417.63" x2="202.46" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-22: 617 code additions</title></line>
-<line x1="205.45" y1="418.03" x2="205.45" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-23: 582 code additions</title></line>
-<line x1="208.44" y1="409.09" x2="208.44" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-24: 2,127 code additions</title></line>
-<line x1="211.43" y1="409.91" x2="211.43" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-25: 1,889 code additions</title></line>
-<line x1="214.42" y1="411.34" x2="214.42" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-26: 1,535 code additions</title></line>
-<line x1="217.41" y1="414.38" x2="217.41" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-27: 988 code additions</title></line>
-<line x1="220.40" y1="430.56" x2="220.40" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-28: 94 code additions</title></line>
-<line x1="223.38" y1="418.69" x2="223.38" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-29: 529 code additions</title></line>
-<line x1="226.37" y1="412.51" x2="226.37" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-06-30: 1,296 code additions</title></line>
-<line x1="229.36" y1="420.77" x2="229.36" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-01: 391 code additions</title></line>
-<line x1="232.35" y1="419.76" x2="232.35" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-02: 453 code additions</title></line>
-<line x1="235.34" y1="423.63" x2="235.34" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-03: 258 code additions</title></line>
-<line x1="238.33" y1="462.00" x2="238.33" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-07-04: 0 code additions</title></line>
-<line x1="241.32" y1="462.00" x2="241.32" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-07-05: 0 code additions</title></line>
-<line x1="244.31" y1="443.30" x2="244.31" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-06: 14 code additions</title></line>
-<line x1="247.30" y1="418.48" x2="247.30" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-07: 545 code additions</title></line>
-<line x1="250.29" y1="423.47" x2="250.29" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-08: 264 code additions</title></line>
-<line x1="253.27" y1="418.19" x2="253.27" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-09: 569 code additions</title></line>
-<line x1="256.26" y1="413.05" x2="256.26" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-10: 1,198 code additions</title></line>
-<line x1="259.25" y1="417.17" x2="259.25" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-11: 659 code additions</title></line>
-<line x1="262.24" y1="430.63" x2="262.24" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-12: 93 code additions</title></line>
-<line x1="265.23" y1="433.62" x2="265.23" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-13: 60 code additions</title></line>
-<line x1="268.22" y1="413.47" x2="268.22" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-14: 1,127 code additions</title></line>
-<line x1="271.21" y1="442.86" x2="271.21" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-15: 15 code additions</title></line>
-<line x1="274.20" y1="411.00" x2="274.20" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-16: 1,612 code additions</title></line>
-<line x1="277.19" y1="452.43" x2="277.19" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-17: 3 code additions</title></line>
-<line x1="280.18" y1="416.70" x2="280.18" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-18: 706 code additions</title></line>
-<line x1="283.16" y1="462.00" x2="283.16" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-07-19: 0 code additions</title></line>
-<line x1="286.15" y1="462.00" x2="286.15" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-07-20: 0 code additions</title></line>
-<line x1="289.14" y1="462.00" x2="289.14" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-07-21: 0 code additions</title></line>
-<line x1="292.13" y1="406.65" x2="292.13" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-22: 3,029 code additions</title></line>
-<line x1="295.12" y1="422.64" x2="295.12" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-23: 298 code additions</title></line>
-<line x1="298.11" y1="424.02" x2="298.11" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-24: 244 code additions</title></line>
-<line x1="301.10" y1="422.78" x2="301.10" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-25: 292 code additions</title></line>
-<line x1="304.09" y1="414.87" x2="304.09" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-26: 920 code additions</title></line>
-<line x1="307.08" y1="462.00" x2="307.08" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-07-27: 0 code additions</title></line>
-<line x1="310.07" y1="410.23" x2="310.07" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-28: 1,802 code additions</title></line>
-<line x1="313.05" y1="462.00" x2="313.05" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-07-29: 0 code additions</title></line>
-<line x1="316.04" y1="435.72" x2="316.04" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-30: 44 code additions</title></line>
-<line x1="319.03" y1="420.51" x2="319.03" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-07-31: 406 code additions</title></line>
-<line x1="322.02" y1="424.16" x2="322.02" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-01: 239 code additions</title></line>
-<line x1="325.01" y1="408.90" x2="325.01" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-02: 2,185 code additions</title></line>
-<line x1="328.00" y1="462.00" x2="328.00" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-08-03: 0 code additions</title></line>
-<line x1="330.99" y1="408.12" x2="330.99" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-04: 2,449 code additions</title></line>
-<line x1="333.98" y1="402.92" x2="333.98" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-05: 5,201 code additions</title></line>
-<line x1="336.97" y1="409.14" x2="336.97" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-06: 2,112 code additions</title></line>
-<line x1="339.96" y1="412.94" x2="339.96" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-07: 1,218 code additions</title></line>
-<line x1="342.95" y1="410.48" x2="342.95" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-08: 1,739 code additions</title></line>
-<line x1="345.93" y1="462.00" x2="345.93" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-08-09: 0 code additions</title></line>
-<line x1="348.92" y1="462.00" x2="348.92" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-08-10: 0 code additions</title></line>
-<line x1="351.91" y1="416.36" x2="351.91" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-11: 741 code additions</title></line>
-<line x1="354.90" y1="409.65" x2="354.90" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-12: 1,962 code additions</title></line>
-<line x1="357.89" y1="425.99" x2="357.89" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-13: 183 code additions</title></line>
-<line x1="360.88" y1="401.55" x2="360.88" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-14: 6,339 code additions</title></line>
-<line x1="363.87" y1="406.70" x2="363.87" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-15: 3,006 code additions</title></line>
-<line x1="366.86" y1="413.35" x2="366.86" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-16: 1,148 code additions</title></line>
-<line x1="369.85" y1="462.00" x2="369.85" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-08-17: 0 code additions</title></line>
-<line x1="372.84" y1="434.08" x2="372.84" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-18: 56 code additions</title></line>
-<line x1="375.82" y1="411.93" x2="375.82" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-19: 1,409 code additions</title></line>
-<line x1="378.81" y1="406.23" x2="378.81" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-20: 3,217 code additions</title></line>
-<line x1="381.80" y1="409.24" x2="381.80" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-21: 2,082 code additions</title></line>
-<line x1="384.79" y1="403.38" x2="384.79" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-22: 4,868 code additions</title></line>
-<line x1="387.78" y1="398.36" x2="387.78" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-23: 10,069 code additions</title></line>
-<line x1="390.77" y1="462.00" x2="390.77" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-08-24: 0 code additions</title></line>
-<line x1="393.76" y1="408.52" x2="393.76" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-25: 2,309 code additions</title></line>
-<line x1="396.75" y1="413.91" x2="396.75" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-26: 1,058 code additions</title></line>
-<line x1="399.74" y1="405.45" x2="399.74" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-27: 3,603 code additions</title></line>
-<line x1="402.73" y1="413.19" x2="402.73" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-28: 1,175 code additions</title></line>
-<line x1="405.71" y1="405.84" x2="405.71" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-29: 3,406 code additions</title></line>
-<line x1="408.70" y1="421.81" x2="408.70" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-08-30: 336 code additions</title></line>
-<line x1="411.69" y1="462.00" x2="411.69" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-08-31: 0 code additions</title></line>
-<line x1="414.68" y1="462.00" x2="414.68" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-09-01: 0 code additions</title></line>
-<line x1="417.67" y1="406.23" x2="417.67" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-02: 3,217 code additions</title></line>
-<line x1="420.66" y1="411.64" x2="420.66" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-03: 1,470 code additions</title></line>
-<line x1="423.65" y1="462.00" x2="423.65" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-09-04: 0 code additions</title></line>
-<line x1="426.64" y1="407.47" x2="426.64" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-05: 2,691 code additions</title></line>
-<line x1="429.63" y1="462.00" x2="429.63" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-09-06: 0 code additions</title></line>
-<line x1="432.62" y1="440.66" x2="432.62" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-07: 21 code additions</title></line>
-<line x1="435.60" y1="401.00" x2="435.60" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-08: 6,868 code additions</title></line>
-<line x1="438.59" y1="410.81" x2="438.59" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-09: 1,659 code additions</title></line>
-<line x1="441.58" y1="413.73" x2="441.58" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-10: 1,086 code additions</title></line>
-<line x1="444.57" y1="414.51" x2="444.57" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-11: 970 code additions</title></line>
-<line x1="447.56" y1="409.04" x2="447.56" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-12: 2,143 code additions</title></line>
-<line x1="450.55" y1="403.13" x2="450.55" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-13: 5,042 code additions</title></line>
-<line x1="453.54" y1="413.35" x2="453.54" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-14: 1,147 code additions</title></line>
-<line x1="456.53" y1="397.22" x2="456.53" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-15: 11,867 code additions</title></line>
-<line x1="459.52" y1="408.92" x2="459.52" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-16: 2,181 code additions</title></line>
-<line x1="462.51" y1="414.36" x2="462.51" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-17: 991 code additions</title></line>
-<line x1="465.49" y1="415.06" x2="465.49" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-18: 896 code additions</title></line>
-<line x1="468.48" y1="433.28" x2="468.48" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-19: 63 code additions</title></line>
-<line x1="471.47" y1="427.27" x2="471.47" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-20: 152 code additions</title></line>
-<line x1="474.46" y1="441.67" x2="474.46" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-21: 18 code additions</title></line>
-<line x1="477.45" y1="407.80" x2="477.45" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-22: 2,564 code additions</title></line>
-<line x1="480.44" y1="416.41" x2="480.44" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-23: 736 code additions</title></line>
-<line x1="483.43" y1="462.00" x2="483.43" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-09-24: 0 code additions</title></line>
-<line x1="486.42" y1="414.54" x2="486.42" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-25: 965 code additions</title></line>
-<line x1="489.41" y1="413.56" x2="489.41" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-26: 1,113 code additions</title></line>
-<line x1="492.40" y1="462.00" x2="492.40" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-09-27: 0 code additions</title></line>
-<line x1="495.38" y1="462.00" x2="495.38" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-09-28: 0 code additions</title></line>
-<line x1="498.37" y1="403.59" x2="498.37" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-29: 4,720 code additions</title></line>
-<line x1="501.36" y1="400.70" x2="501.36" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-09-30: 7,174 code additions</title></line>
-<line x1="504.35" y1="404.44" x2="504.35" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-01: 4,172 code additions</title></line>
-<line x1="507.34" y1="430.20" x2="507.34" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-02: 99 code additions</title></line>
-<line x1="510.33" y1="462.00" x2="510.33" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-03: 0 code additions</title></line>
-<line x1="513.32" y1="462.00" x2="513.32" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-04: 0 code additions</title></line>
-<line x1="516.31" y1="462.00" x2="516.31" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-05: 0 code additions</title></line>
-<line x1="519.30" y1="462.00" x2="519.30" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-06: 0 code additions</title></line>
-<line x1="522.29" y1="462.00" x2="522.29" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-07: 0 code additions</title></line>
-<line x1="525.27" y1="462.00" x2="525.27" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-08: 0 code additions</title></line>
-<line x1="528.26" y1="430.63" x2="528.26" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-09: 93 code additions</title></line>
-<line x1="531.25" y1="435.13" x2="531.25" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-10: 48 code additions</title></line>
-<line x1="534.24" y1="440.35" x2="534.24" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-11: 22 code additions</title></line>
-<line x1="537.23" y1="462.00" x2="537.23" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-12: 0 code additions</title></line>
-<line x1="540.22" y1="426.46" x2="540.22" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-13: 171 code additions</title></line>
-<line x1="543.21" y1="433.39" x2="543.21" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-14: 62 code additions</title></line>
-<line x1="546.20" y1="407.43" x2="546.20" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-15: 2,706 code additions</title></line>
-<line x1="549.19" y1="462.00" x2="549.19" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-16: 0 code additions</title></line>
-<line x1="552.18" y1="440.06" x2="552.18" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-17: 23 code additions</title></line>
-<line x1="555.16" y1="397.85" x2="555.16" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-18: 10,837 code additions</title></line>
-<line x1="558.15" y1="462.00" x2="558.15" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-19: 0 code additions</title></line>
-<line x1="561.14" y1="410.39" x2="561.14" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-20: 1,763 code additions</title></line>
-<line x1="564.13" y1="403.44" x2="564.13" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-21: 4,824 code additions</title></line>
-<line x1="567.12" y1="418.81" x2="567.12" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-22: 520 code additions</title></line>
-<line x1="570.11" y1="417.69" x2="570.11" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-23: 611 code additions</title></line>
-<line x1="573.10" y1="410.83" x2="573.10" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-24: 1,652 code additions</title></line>
-<line x1="576.09" y1="462.00" x2="576.09" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-25: 0 code additions</title></line>
-<line x1="579.08" y1="462.00" x2="579.08" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-10-26: 0 code additions</title></line>
-<line x1="582.07" y1="404.48" x2="582.07" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-27: 4,151 code additions</title></line>
-<line x1="585.05" y1="399.42" x2="585.05" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-28: 8,638 code additions</title></line>
-<line x1="588.04" y1="406.83" x2="588.04" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-29: 2,953 code additions</title></line>
-<line x1="591.03" y1="412.13" x2="591.03" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-30: 1,370 code additions</title></line>
-<line x1="594.02" y1="413.14" x2="594.02" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-10-31: 1,182 code additions</title></line>
-<line x1="597.01" y1="462.00" x2="597.01" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-11-01: 0 code additions</title></line>
-<line x1="600.00" y1="462.00" x2="600.00" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-11-02: 0 code additions</title></line>
-<line x1="602.99" y1="415.42" x2="602.99" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-03: 850 code additions</title></line>
-<line x1="605.98" y1="403.66" x2="605.98" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-04: 4,671 code additions</title></line>
-<line x1="608.97" y1="407.83" x2="608.97" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-05: 2,553 code additions</title></line>
-<line x1="611.96" y1="399.55" x2="611.96" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-06: 8,478 code additions</title></line>
-<line x1="614.95" y1="405.41" x2="614.95" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-07: 3,627 code additions</title></line>
-<line x1="617.93" y1="430.20" x2="617.93" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-08: 99 code additions</title></line>
-<line x1="620.92" y1="397.12" x2="620.92" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-09: 12,049 code additions</title></line>
-<line x1="623.91" y1="402.47" x2="623.91" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-10: 5,553 code additions</title></line>
-<line x1="626.90" y1="407.82" x2="626.90" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-11: 2,558 code additions</title></line>
-<line x1="629.89" y1="411.69" x2="629.89" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-12: 1,460 code additions</title></line>
-<line x1="632.88" y1="404.13" x2="632.88" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-13: 4,365 code additions</title></line>
-<line x1="635.87" y1="462.00" x2="635.87" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-11-14: 0 code additions</title></line>
-<line x1="638.86" y1="457.21" x2="638.86" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-15: 1 code additions</title></line>
-<line x1="641.85" y1="399.41" x2="641.85" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-16: 8,652 code additions</title></line>
-<line x1="644.84" y1="404.01" x2="644.84" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-17: 4,443 code additions</title></line>
-<line x1="647.82" y1="410.54" x2="647.82" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-18: 1,725 code additions</title></line>
-<line x1="650.81" y1="400.72" x2="650.81" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-19: 7,151 code additions</title></line>
-<line x1="653.80" y1="410.07" x2="653.80" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-20: 1,845 code additions</title></line>
-<line x1="656.79" y1="422.62" x2="656.79" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-21: 299 code additions</title></line>
-<line x1="659.78" y1="437.45" x2="659.78" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-22: 34 code additions</title></line>
-<line x1="662.77" y1="446.10" x2="662.77" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-23: 9 code additions</title></line>
-<line x1="665.76" y1="422.13" x2="665.76" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-24: 321 code additions</title></line>
-<line x1="668.75" y1="404.83" x2="668.75" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-25: 3,944 code additions</title></line>
-<line x1="671.74" y1="411.05" x2="671.74" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-26: 1,601 code additions</title></line>
-<line x1="674.73" y1="401.89" x2="674.73" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-27: 6,040 code additions</title></line>
-<line x1="677.71" y1="419.20" x2="677.71" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-28: 491 code additions</title></line>
-<line x1="680.70" y1="401.33" x2="680.70" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-11-29: 6,544 code additions</title></line>
-<line x1="683.69" y1="462.00" x2="683.69" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-11-30: 0 code additions</title></line>
-<line x1="686.68" y1="412.23" x2="686.68" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-01: 1,349 code additions</title></line>
-<line x1="689.67" y1="422.28" x2="689.67" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-02: 314 code additions</title></line>
-<line x1="692.66" y1="433.39" x2="692.66" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-03: 62 code additions</title></line>
-<line x1="695.65" y1="390.00" x2="695.65" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-04: 33,785 code additions</title></line>
-<line x1="698.64" y1="423.29" x2="698.64" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-05: 271 code additions</title></line>
-<line x1="701.63" y1="419.42" x2="701.63" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-06: 476 code additions</title></line>
-<line x1="704.62" y1="462.00" x2="704.62" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-07: 0 code additions</title></line>
-<line x1="707.60" y1="432.97" x2="707.60" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-08: 66 code additions</title></line>
-<line x1="710.59" y1="414.13" x2="710.59" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-09: 1,024 code additions</title></line>
-<line x1="713.58" y1="424.92" x2="713.58" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-10: 214 code additions</title></line>
-<line x1="716.57" y1="415.73" x2="716.57" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-11: 812 code additions</title></line>
-<line x1="719.56" y1="423.77" x2="719.56" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-12: 253 code additions</title></line>
-<line x1="722.55" y1="462.00" x2="722.55" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-13: 0 code additions</title></line>
-<line x1="725.54" y1="462.00" x2="725.54" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-14: 0 code additions</title></line>
-<line x1="728.53" y1="417.76" x2="728.53" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-15: 605 code additions</title></line>
-<line x1="731.52" y1="434.46" x2="731.52" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-16: 53 code additions</title></line>
-<line x1="734.51" y1="420.08" x2="734.51" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-17: 432 code additions</title></line>
-<line x1="737.49" y1="411.02" x2="737.49" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-18: 1,607 code additions</title></line>
-<line x1="740.48" y1="424.63" x2="740.48" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-19: 223 code additions</title></line>
-<line x1="743.47" y1="454.41" x2="743.47" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-20: 2 code additions</title></line>
-<line x1="746.46" y1="462.00" x2="746.46" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-21: 0 code additions</title></line>
-<line x1="749.45" y1="441.32" x2="749.45" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-22: 19 code additions</title></line>
-<line x1="752.44" y1="462.00" x2="752.44" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-23: 0 code additions</title></line>
-<line x1="755.43" y1="462.00" x2="755.43" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-24: 0 code additions</title></line>
-<line x1="758.42" y1="462.00" x2="758.42" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-25: 0 code additions</title></line>
-<line x1="761.41" y1="462.00" x2="761.41" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-26: 0 code additions</title></line>
-<line x1="764.40" y1="422.55" x2="764.40" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-27: 302 code additions</title></line>
-<line x1="767.38" y1="462.00" x2="767.38" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-28: 0 code additions</title></line>
-<line x1="770.37" y1="423.58" x2="770.37" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-29: 260 code additions</title></line>
-<line x1="773.36" y1="416.01" x2="773.36" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2025-12-30: 780 code additions</title></line>
-<line x1="776.35" y1="462.00" x2="776.35" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2025-12-31: 0 code additions</title></line>
-<line x1="779.34" y1="462.00" x2="779.34" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-01: 0 code additions</title></line>
-<line x1="782.33" y1="462.00" x2="782.33" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-02: 0 code additions</title></line>
-<line x1="785.32" y1="462.00" x2="785.32" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-03: 0 code additions</title></line>
-<line x1="788.31" y1="462.00" x2="788.31" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-04: 0 code additions</title></line>
-<line x1="791.30" y1="406.40" x2="791.30" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-05: 3,139 code additions</title></line>
-<line x1="794.29" y1="410.25" x2="794.29" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-06: 1,798 code additions</title></line>
-<line x1="797.27" y1="434.85" x2="797.27" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-07: 50 code additions</title></line>
-<line x1="800.26" y1="420.08" x2="800.26" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-08: 432 code additions</title></line>
-<line x1="803.25" y1="421.96" x2="803.25" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-09: 329 code additions</title></line>
-<line x1="806.24" y1="462.00" x2="806.24" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-10: 0 code additions</title></line>
-<line x1="809.23" y1="462.00" x2="809.23" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-11: 0 code additions</title></line>
-<line x1="812.22" y1="422.30" x2="812.22" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-12: 313 code additions</title></line>
-<line x1="815.21" y1="422.90" x2="815.21" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-13: 287 code additions</title></line>
-<line x1="818.20" y1="420.43" x2="818.20" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-14: 411 code additions</title></line>
-<line x1="821.19" y1="409.42" x2="821.19" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-15: 2,029 code additions</title></line>
-<line x1="824.18" y1="442.04" x2="824.18" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-16: 17 code additions</title></line>
-<line x1="827.16" y1="433.73" x2="827.16" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-17: 59 code additions</title></line>
-<line x1="830.15" y1="462.00" x2="830.15" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-18: 0 code additions</title></line>
-<line x1="833.14" y1="462.00" x2="833.14" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-19: 0 code additions</title></line>
-<line x1="836.13" y1="462.00" x2="836.13" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-20: 0 code additions</title></line>
-<line x1="839.12" y1="394.60" x2="839.12" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-21: 17,344 code additions</title></line>
-<line x1="842.11" y1="424.27" x2="842.11" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-22: 235 code additions</title></line>
-<line x1="845.10" y1="421.00" x2="845.10" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-23: 378 code additions</title></line>
-<line x1="848.09" y1="403.16" x2="848.09" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-24: 5,021 code additions</title></line>
-<line x1="851.08" y1="406.16" x2="851.08" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-25: 3,250 code additions</title></line>
-<line x1="854.07" y1="428.66" x2="854.07" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-26: 124 code additions</title></line>
-<line x1="857.05" y1="416.25" x2="857.05" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-27: 754 code additions</title></line>
-<line x1="860.04" y1="433.73" x2="860.04" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-28: 59 code additions</title></line>
-<line x1="863.03" y1="438.75" x2="863.03" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-29: 28 code additions</title></line>
-<line x1="866.02" y1="462.00" x2="866.02" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-01-30: 0 code additions</title></line>
-<line x1="869.01" y1="441.67" x2="869.01" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-01-31: 18 code additions</title></line>
-<line x1="872.00" y1="462.00" x2="872.00" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-02-01: 0 code additions</title></line>
-<line x1="874.99" y1="419.49" x2="874.99" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-02: 471 code additions</title></line>
-<line x1="877.98" y1="415.13" x2="877.98" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-03: 886 code additions</title></line>
-<line x1="880.97" y1="438.29" x2="880.97" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-04: 30 code additions</title></line>
-<line x1="883.96" y1="462.00" x2="883.96" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-02-05: 0 code additions</title></line>
-<line x1="886.95" y1="416.54" x2="886.95" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-06: 722 code additions</title></line>
-<line x1="889.93" y1="462.00" x2="889.93" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-02-07: 0 code additions</title></line>
-<line x1="892.92" y1="462.00" x2="892.92" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-02-08: 0 code additions</title></line>
-<line x1="895.91" y1="430.00" x2="895.91" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-09: 102 code additions</title></line>
-<line x1="898.90" y1="410.10" x2="898.90" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-10: 1,837 code additions</title></line>
-<line x1="901.89" y1="418.10" x2="901.89" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-11: 576 code additions</title></line>
-<line x1="904.88" y1="423.14" x2="904.88" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-12: 277 code additions</title></line>
-<line x1="907.87" y1="422.73" x2="907.87" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-13: 294 code additions</title></line>
-<line x1="910.86" y1="462.00" x2="910.86" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-02-14: 0 code additions</title></line>
-<line x1="913.85" y1="462.00" x2="913.85" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-02-15: 0 code additions</title></line>
-<line x1="916.84" y1="431.33" x2="916.84" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-16: 84 code additions</title></line>
-<line x1="919.82" y1="426.83" x2="919.82" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-17: 162 code additions</title></line>
-<line x1="922.81" y1="424.82" x2="922.81" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-18: 217 code additions</title></line>
-<line x1="925.80" y1="406.91" x2="925.80" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-19: 2,916 code additions</title></line>
-<line x1="928.79" y1="404.15" x2="928.79" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-20: 4,352 code additions</title></line>
-<line x1="931.78" y1="417.28" x2="931.78" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-21: 649 code additions</title></line>
-<line x1="934.77" y1="413.71" x2="934.77" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-22: 1,089 code additions</title></line>
-<line x1="937.76" y1="415.12" x2="937.76" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-23: 888 code additions</title></line>
-<line x1="940.75" y1="423.79" x2="940.75" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-24: 252 code additions</title></line>
-<line x1="943.74" y1="403.38" x2="943.74" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-25: 4,864 code additions</title></line>
-<line x1="946.73" y1="403.02" x2="946.73" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-26: 5,123 code additions</title></line>
-<line x1="949.71" y1="410.84" x2="949.71" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-27: 1,651 code additions</title></line>
-<line x1="952.70" y1="401.86" x2="952.70" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-02-28: 6,065 code additions</title></line>
-<line x1="955.69" y1="419.55" x2="955.69" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-01: 467 code additions</title></line>
-<line x1="958.68" y1="437.65" x2="958.68" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-02: 33 code additions</title></line>
-<line x1="961.67" y1="400.78" x2="961.67" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-03: 7,093 code additions</title></line>
-<line x1="964.66" y1="405.36" x2="964.66" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-04: 3,654 code additions</title></line>
-<line x1="967.65" y1="422.32" x2="967.65" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-05: 312 code additions</title></line>
-<line x1="970.64" y1="395.61" x2="970.64" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-06: 14,983 code additions</title></line>
-<line x1="973.63" y1="417.51" x2="973.63" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-07: 628 code additions</title></line>
-<line x1="976.62" y1="435.56" x2="976.62" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-08: 45 code additions</title></line>
-<line x1="979.60" y1="404.28" x2="979.60" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-09: 4,272 code additions</title></line>
-<line x1="982.59" y1="423.96" x2="982.59" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-10: 246 code additions</title></line>
-<line x1="985.58" y1="406.63" x2="985.58" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-11: 3,036 code additions</title></line>
-<line x1="988.57" y1="433.18" x2="988.57" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-12: 64 code additions</title></line>
-<line x1="991.56" y1="406.21" x2="991.56" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-13: 3,230 code additions</title></line>
-<line x1="994.55" y1="462.00" x2="994.55" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-03-14: 0 code additions</title></line>
-<line x1="997.54" y1="418.69" x2="997.54" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-15: 529 code additions</title></line>
-<line x1="1000.53" y1="420.44" x2="1000.53" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-16: 410 code additions</title></line>
-<line x1="1003.52" y1="391.22" x2="1003.52" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-17: 28,313 code additions</title></line>
-<line x1="1006.51" y1="406.50" x2="1006.51" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-18: 3,094 code additions</title></line>
-<line x1="1009.49" y1="418.64" x2="1009.49" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-19: 533 code additions</title></line>
-<line x1="1012.48" y1="421.98" x2="1012.48" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-20: 328 code additions</title></line>
-<line x1="1015.47" y1="417.73" x2="1015.47" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-21: 608 code additions</title></line>
-<line x1="1018.46" y1="424.70" x2="1018.46" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-22: 221 code additions</title></line>
-<line x1="1021.45" y1="412.74" x2="1021.45" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-23: 1,253 code additions</title></line>
-<line x1="1024.44" y1="415.27" x2="1024.44" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-24: 869 code additions</title></line>
-<line x1="1027.43" y1="407.12" x2="1027.43" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-25: 2,829 code additions</title></line>
-<line x1="1030.42" y1="462.00" x2="1030.42" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-03-26: 0 code additions</title></line>
-<line x1="1033.41" y1="407.34" x2="1033.41" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-27: 2,741 code additions</title></line>
-<line x1="1036.40" y1="397.36" x2="1036.40" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-28: 11,627 code additions</title></line>
-<line x1="1039.38" y1="462.00" x2="1039.38" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-03-29: 0 code additions</title></line>
-<line x1="1042.37" y1="415.08" x2="1042.37" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-30: 893 code additions</title></line>
-<line x1="1045.36" y1="403.64" x2="1045.36" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-03-31: 4,688 code additions</title></line>
-<line x1="1048.35" y1="409.42" x2="1048.35" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-01: 2,029 code additions</title></line>
-<line x1="1051.34" y1="415.20" x2="1051.34" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-02: 877 code additions</title></line>
-<line x1="1054.33" y1="422.73" x2="1054.33" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-03: 294 code additions</title></line>
-<line x1="1057.32" y1="462.00" x2="1057.32" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-04-04: 0 code additions</title></line>
-<line x1="1060.31" y1="411.28" x2="1060.31" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-05: 1,548 code additions</title></line>
-<line x1="1063.30" y1="405.89" x2="1063.30" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-06: 3,383 code additions</title></line>
-<line x1="1066.29" y1="398.64" x2="1066.29" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-07: 9,664 code additions</title></line>
-<line x1="1069.27" y1="392.01" x2="1069.27" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-08: 25,248 code additions</title></line>
-<line x1="1072.26" y1="408.78" x2="1072.26" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-09: 2,225 code additions</title></line>
-<line x1="1075.25" y1="462.00" x2="1075.25" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-04-10: 0 code additions</title></line>
-<line x1="1078.24" y1="415.63" x2="1078.24" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-11: 824 code additions</title></line>
-<line x1="1081.23" y1="462.00" x2="1081.23" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-04-12: 0 code additions</title></line>
-<line x1="1084.22" y1="402.14" x2="1084.22" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-13: 5,823 code additions</title></line>
-<line x1="1087.21" y1="417.33" x2="1087.21" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-14: 644 code additions</title></line>
-<line x1="1090.20" y1="395.59" x2="1090.20" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-15: 15,033 code additions</title></line>
-<line x1="1093.19" y1="406.59" x2="1093.19" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-16: 3,057 code additions</title></line>
-<line x1="1096.18" y1="416.02" x2="1096.18" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-17: 779 code additions</title></line>
-<line x1="1099.16" y1="462.00" x2="1099.16" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-04-18: 0 code additions</title></line>
-<line x1="1102.15" y1="410.49" x2="1102.15" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-19: 1,736 code additions</title></line>
-<line x1="1105.14" y1="405.33" x2="1105.14" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-20: 3,665 code additions</title></line>
-<line x1="1108.13" y1="410.68" x2="1108.13" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-21: 1,689 code additions</title></line>
-<line x1="1111.12" y1="404.62" x2="1111.12" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-22: 4,066 code additions</title></line>
-<line x1="1114.11" y1="423.93" x2="1114.11" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-23: 247 code additions</title></line>
-<line x1="1117.10" y1="409.41" x2="1117.10" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-24: 2,031 code additions</title></line>
-<line x1="1120.09" y1="462.00" x2="1120.09" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-04-25: 0 code additions</title></line>
-<line x1="1123.08" y1="406.48" x2="1123.08" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-26: 3,106 code additions</title></line>
-<line x1="1126.07" y1="401.97" x2="1126.07" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-27: 5,969 code additions</title></line>
-<line x1="1129.05" y1="409.59" x2="1129.05" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-28: 1,979 code additions</title></line>
-<line x1="1132.04" y1="406.13" x2="1132.04" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-29: 3,266 code additions</title></line>
-<line x1="1135.03" y1="412.50" x2="1135.03" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-04-30: 1,298 code additions</title></line>
-<line x1="1138.02" y1="409.37" x2="1138.02" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-05-01: 2,042 code additions</title></line>
-<line x1="1141.01" y1="422.83" x2="1141.01" y2="462" stroke="#65f3c8" stroke-opacity="0.62" stroke-width="1.6"><title>2026-05-02: 290 code additions</title></line>
-<line x1="1144.00" y1="462.00" x2="1144.00" y2="462" stroke="#65f3c8" stroke-opacity="0.08" stroke-width="1.6"><title>2026-05-03: 0 code additions</title></line>
-<text x="56" y="488" class="tiny">145 repos scanned, 6 skipped. Excludes docs, JSON/TXT/SVG/PT, media, models, locks, logs, build output, public/assets, and similar artifacts. Generated 2026-05-04.</text>
+<text x="600" y="170" class="tag">&lt;daily-grid&gt;</text>
+<text x="54" y="212" class="muted">may</text>
+<text x="106" y="212" class="muted">jun</text>
+<text x="171" y="212" class="muted">jul</text>
+<text x="223" y="212" class="muted">aug</text>
+<text x="288" y="212" class="muted">sep</text>
+<text x="340" y="212" class="muted">oct</text>
+<text x="392" y="212" class="muted">nov</text>
+<text x="457" y="212" class="muted">dec</text>
+<text x="509" y="212" class="muted">jan</text>
+<text x="561" y="212" class="muted">feb</text>
+<text x="613" y="212" class="muted">mar</text>
+<text x="678" y="212" class="muted">apr</text>
+<text x="730" y="212" class="muted">may</text>
+<rect x="54" y="224" width="10" height="10" fill="#777777"><title>2025-05-04: 1,910 additions, 15 commits</title></rect>
+<rect x="54" y="237" width="10" height="10" fill="#777777"><title>2025-05-05: 1,733 additions, 23 commits</title></rect>
+<rect x="54" y="250" width="10" height="10" fill="#444444"><title>2025-05-06: 2,379 additions, 21 commits</title></rect>
+<rect x="54" y="263" width="10" height="10" fill="#777777"><title>2025-05-07: 1,368 additions, 25 commits</title></rect>
+<rect x="54" y="276" width="10" height="10" fill="#777777"><title>2025-05-08: 1,360 additions, 24 commits</title></rect>
+<rect x="54" y="289" width="10" height="10" fill="#777777"><title>2025-05-09: 548 additions, 25 commits</title></rect>
+<rect x="54" y="302" width="10" height="10" fill="#eeeeee"><title>2025-05-10: 0 additions, 9 commits</title></rect>
+<rect x="67" y="224" width="10" height="10" fill="#444444"><title>2025-05-11: 2,918 additions, 4 commits</title></rect>
+<rect x="67" y="237" width="10" height="10" fill="#eeeeee"><title>2025-05-12: 0 additions, 0 commits</title></rect>
+<rect x="67" y="250" width="10" height="10" fill="#444444"><title>2025-05-13: 4,379 additions, 4 commits</title></rect>
+<rect x="67" y="263" width="10" height="10" fill="#444444"><title>2025-05-14: 2,380 additions, 5 commits</title></rect>
+<rect x="67" y="276" width="10" height="10" fill="#444444"><title>2025-05-15: 3,090 additions, 5 commits</title></rect>
+<rect x="67" y="289" width="10" height="10" fill="#444444"><title>2025-05-16: 3,064 additions, 22 commits</title></rect>
+<rect x="67" y="302" width="10" height="10" fill="#777777"><title>2025-05-17: 220 additions, 19 commits</title></rect>
+<rect x="80" y="224" width="10" height="10" fill="#444444"><title>2025-05-18: 2,781 additions, 5 commits</title></rect>
+<rect x="80" y="237" width="10" height="10" fill="#777777"><title>2025-05-19: 443 additions, 15 commits</title></rect>
+<rect x="80" y="250" width="10" height="10" fill="#aaaaaa"><title>2025-05-20: 59 additions, 15 commits</title></rect>
+<rect x="80" y="263" width="10" height="10" fill="#777777"><title>2025-05-21: 1,003 additions, 29 commits</title></rect>
+<rect x="80" y="276" width="10" height="10" fill="#aaaaaa"><title>2025-05-22: 140 additions, 20 commits</title></rect>
+<rect x="80" y="289" width="10" height="10" fill="#aaaaaa"><title>2025-05-23: 60 additions, 3 commits</title></rect>
+<rect x="80" y="302" width="10" height="10" fill="#777777"><title>2025-05-24: 510 additions, 8 commits</title></rect>
+<rect x="93" y="224" width="10" height="10" fill="#777777"><title>2025-05-25: 1,867 additions, 13 commits</title></rect>
+<rect x="93" y="237" width="10" height="10" fill="#777777"><title>2025-05-26: 921 additions, 10 commits</title></rect>
+<rect x="93" y="250" width="10" height="10" fill="#444444"><title>2025-05-27: 15,362 additions, 25 commits</title></rect>
+<rect x="93" y="263" width="10" height="10" fill="#444444"><title>2025-05-28: 3,190 additions, 15 commits</title></rect>
+<rect x="93" y="276" width="10" height="10" fill="#444444"><title>2025-05-29: 7,108 additions, 27 commits</title></rect>
+<rect x="93" y="289" width="10" height="10" fill="#777777"><title>2025-05-30: 1,850 additions, 12 commits</title></rect>
+<rect x="93" y="302" width="10" height="10" fill="#aaaaaa"><title>2025-05-31: 31 additions, 1 commits</title></rect>
+<rect x="106" y="224" width="10" height="10" fill="#aaaaaa"><title>2025-06-01: 23 additions, 2 commits</title></rect>
+<rect x="106" y="237" width="10" height="10" fill="#444444"><title>2025-06-02: 5,860 additions, 24 commits</title></rect>
+<rect x="106" y="250" width="10" height="10" fill="#444444"><title>2025-06-03: 11,836 additions, 28 commits</title></rect>
+<rect x="106" y="263" width="10" height="10" fill="#777777"><title>2025-06-04: 2,149 additions, 19 commits</title></rect>
+<rect x="106" y="276" width="10" height="10" fill="#444444"><title>2025-06-05: 2,345 additions, 19 commits</title></rect>
+<rect x="106" y="289" width="10" height="10" fill="#444444"><title>2025-06-06: 2,288 additions, 10 commits</title></rect>
+<rect x="106" y="302" width="10" height="10" fill="#777777"><title>2025-06-07: 514 additions, 5 commits</title></rect>
+<rect x="119" y="224" width="10" height="10" fill="#444444"><title>2025-06-08: 4,533 additions, 12 commits</title></rect>
+<rect x="119" y="237" width="10" height="10" fill="#777777"><title>2025-06-09: 365 additions, 28 commits</title></rect>
+<rect x="119" y="250" width="10" height="10" fill="#777777"><title>2025-06-10: 385 additions, 12 commits</title></rect>
+<rect x="119" y="263" width="10" height="10" fill="#444444"><title>2025-06-11: 2,381 additions, 9 commits</title></rect>
+<rect x="119" y="276" width="10" height="10" fill="#777777"><title>2025-06-12: 994 additions, 26 commits</title></rect>
+<rect x="119" y="289" width="10" height="10" fill="#777777"><title>2025-06-13: 536 additions, 2 commits</title></rect>
+<rect x="119" y="302" width="10" height="10" fill="#777777"><title>2025-06-14: 780 additions, 17 commits</title></rect>
+<rect x="132" y="224" width="10" height="10" fill="#777777"><title>2025-06-15: 500 additions, 6 commits</title></rect>
+<rect x="132" y="237" width="10" height="10" fill="#444444"><title>2025-06-16: 2,767 additions, 39 commits</title></rect>
+<rect x="132" y="250" width="10" height="10" fill="#444444"><title>2025-06-17: 2,659 additions, 19 commits</title></rect>
+<rect x="132" y="263" width="10" height="10" fill="#777777"><title>2025-06-18: 1,078 additions, 16 commits</title></rect>
+<rect x="132" y="276" width="10" height="10" fill="#aaaaaa"><title>2025-06-19: 143 additions, 8 commits</title></rect>
+<rect x="132" y="289" width="10" height="10" fill="#777777"><title>2025-06-20: 397 additions, 10 commits</title></rect>
+<rect x="132" y="302" width="10" height="10" fill="#aaaaaa"><title>2025-06-21: 79 additions, 5 commits</title></rect>
+<rect x="145" y="224" width="10" height="10" fill="#777777"><title>2025-06-22: 617 additions, 21 commits</title></rect>
+<rect x="145" y="237" width="10" height="10" fill="#777777"><title>2025-06-23: 582 additions, 19 commits</title></rect>
+<rect x="145" y="250" width="10" height="10" fill="#777777"><title>2025-06-24: 2,127 additions, 15 commits</title></rect>
+<rect x="145" y="263" width="10" height="10" fill="#777777"><title>2025-06-25: 1,889 additions, 24 commits</title></rect>
+<rect x="145" y="276" width="10" height="10" fill="#777777"><title>2025-06-26: 1,535 additions, 30 commits</title></rect>
+<rect x="145" y="289" width="10" height="10" fill="#777777"><title>2025-06-27: 988 additions, 37 commits</title></rect>
+<rect x="145" y="302" width="10" height="10" fill="#aaaaaa"><title>2025-06-28: 94 additions, 3 commits</title></rect>
+<rect x="158" y="224" width="10" height="10" fill="#777777"><title>2025-06-29: 529 additions, 6 commits</title></rect>
+<rect x="158" y="237" width="10" height="10" fill="#777777"><title>2025-06-30: 1,296 additions, 18 commits</title></rect>
+<rect x="158" y="250" width="10" height="10" fill="#777777"><title>2025-07-01: 391 additions, 15 commits</title></rect>
+<rect x="158" y="263" width="10" height="10" fill="#777777"><title>2025-07-02: 453 additions, 14 commits</title></rect>
+<rect x="158" y="276" width="10" height="10" fill="#777777"><title>2025-07-03: 258 additions, 7 commits</title></rect>
+<rect x="158" y="289" width="10" height="10" fill="#eeeeee"><title>2025-07-04: 0 additions, 0 commits</title></rect>
+<rect x="158" y="302" width="10" height="10" fill="#eeeeee"><title>2025-07-05: 0 additions, 0 commits</title></rect>
+<rect x="171" y="224" width="10" height="10" fill="#d0d0d0"><title>2025-07-06: 14 additions, 1 commits</title></rect>
+<rect x="171" y="237" width="10" height="10" fill="#777777"><title>2025-07-07: 545 additions, 18 commits</title></rect>
+<rect x="171" y="250" width="10" height="10" fill="#777777"><title>2025-07-08: 264 additions, 25 commits</title></rect>
+<rect x="171" y="263" width="10" height="10" fill="#777777"><title>2025-07-09: 569 additions, 16 commits</title></rect>
+<rect x="171" y="276" width="10" height="10" fill="#777777"><title>2025-07-10: 1,198 additions, 2 commits</title></rect>
+<rect x="171" y="289" width="10" height="10" fill="#777777"><title>2025-07-11: 659 additions, 13 commits</title></rect>
+<rect x="171" y="302" width="10" height="10" fill="#aaaaaa"><title>2025-07-12: 93 additions, 1 commits</title></rect>
+<rect x="184" y="224" width="10" height="10" fill="#aaaaaa"><title>2025-07-13: 60 additions, 6 commits</title></rect>
+<rect x="184" y="237" width="10" height="10" fill="#777777"><title>2025-07-14: 1,127 additions, 4 commits</title></rect>
+<rect x="184" y="250" width="10" height="10" fill="#aaaaaa"><title>2025-07-15: 15 additions, 2 commits</title></rect>
+<rect x="184" y="263" width="10" height="10" fill="#777777"><title>2025-07-16: 1,612 additions, 19 commits</title></rect>
+<rect x="184" y="276" width="10" height="10" fill="#d0d0d0"><title>2025-07-17: 3 additions, 1 commits</title></rect>
+<rect x="184" y="289" width="10" height="10" fill="#777777"><title>2025-07-18: 706 additions, 3 commits</title></rect>
+<rect x="184" y="302" width="10" height="10" fill="#eeeeee"><title>2025-07-19: 0 additions, 0 commits</title></rect>
+<rect x="197" y="224" width="10" height="10" fill="#eeeeee"><title>2025-07-20: 0 additions, 0 commits</title></rect>
+<rect x="197" y="237" width="10" height="10" fill="#eeeeee"><title>2025-07-21: 0 additions, 0 commits</title></rect>
+<rect x="197" y="250" width="10" height="10" fill="#444444"><title>2025-07-22: 3,029 additions, 12 commits</title></rect>
+<rect x="197" y="263" width="10" height="10" fill="#777777"><title>2025-07-23: 298 additions, 8 commits</title></rect>
+<rect x="197" y="276" width="10" height="10" fill="#777777"><title>2025-07-24: 244 additions, 7 commits</title></rect>
+<rect x="197" y="289" width="10" height="10" fill="#777777"><title>2025-07-25: 292 additions, 7 commits</title></rect>
+<rect x="197" y="302" width="10" height="10" fill="#777777"><title>2025-07-26: 920 additions, 2 commits</title></rect>
+<rect x="210" y="224" width="10" height="10" fill="#eeeeee"><title>2025-07-27: 0 additions, 0 commits</title></rect>
+<rect x="210" y="237" width="10" height="10" fill="#777777"><title>2025-07-28: 1,802 additions, 18 commits</title></rect>
+<rect x="210" y="250" width="10" height="10" fill="#eeeeee"><title>2025-07-29: 0 additions, 0 commits</title></rect>
+<rect x="210" y="263" width="10" height="10" fill="#aaaaaa"><title>2025-07-30: 44 additions, 6 commits</title></rect>
+<rect x="210" y="276" width="10" height="10" fill="#777777"><title>2025-07-31: 406 additions, 20 commits</title></rect>
+<rect x="210" y="289" width="10" height="10" fill="#777777"><title>2025-08-01: 239 additions, 3 commits</title></rect>
+<rect x="210" y="302" width="10" height="10" fill="#777777"><title>2025-08-02: 2,185 additions, 14 commits</title></rect>
+<rect x="223" y="224" width="10" height="10" fill="#eeeeee"><title>2025-08-03: 0 additions, 0 commits</title></rect>
+<rect x="223" y="237" width="10" height="10" fill="#444444"><title>2025-08-04: 2,449 additions, 12 commits</title></rect>
+<rect x="223" y="250" width="10" height="10" fill="#444444"><title>2025-08-05: 5,201 additions, 28 commits</title></rect>
+<rect x="223" y="263" width="10" height="10" fill="#777777"><title>2025-08-06: 2,112 additions, 14 commits</title></rect>
+<rect x="223" y="276" width="10" height="10" fill="#777777"><title>2025-08-07: 1,218 additions, 13 commits</title></rect>
+<rect x="223" y="289" width="10" height="10" fill="#777777"><title>2025-08-08: 1,739 additions, 7 commits</title></rect>
+<rect x="223" y="302" width="10" height="10" fill="#eeeeee"><title>2025-08-09: 0 additions, 0 commits</title></rect>
+<rect x="236" y="224" width="10" height="10" fill="#eeeeee"><title>2025-08-10: 0 additions, 0 commits</title></rect>
+<rect x="236" y="237" width="10" height="10" fill="#777777"><title>2025-08-11: 805 additions, 3 commits</title></rect>
+<rect x="236" y="250" width="10" height="10" fill="#777777"><title>2025-08-12: 1,962 additions, 32 commits</title></rect>
+<rect x="236" y="263" width="10" height="10" fill="#aaaaaa"><title>2025-08-13: 183 additions, 14 commits</title></rect>
+<rect x="236" y="276" width="10" height="10" fill="#444444"><title>2025-08-14: 6,403 additions, 11 commits</title></rect>
+<rect x="236" y="289" width="10" height="10" fill="#444444"><title>2025-08-15: 3,114 additions, 15 commits</title></rect>
+<rect x="236" y="302" width="10" height="10" fill="#777777"><title>2025-08-16: 1,148 additions, 12 commits</title></rect>
+<rect x="249" y="224" width="10" height="10" fill="#eeeeee"><title>2025-08-17: 0 additions, 0 commits</title></rect>
+<rect x="249" y="237" width="10" height="10" fill="#aaaaaa"><title>2025-08-18: 56 additions, 1 commits</title></rect>
+<rect x="249" y="250" width="10" height="10" fill="#777777"><title>2025-08-19: 1,409 additions, 22 commits</title></rect>
+<rect x="249" y="263" width="10" height="10" fill="#444444"><title>2025-08-20: 3,223 additions, 34 commits</title></rect>
+<rect x="249" y="276" width="10" height="10" fill="#777777"><title>2025-08-21: 2,128 additions, 20 commits</title></rect>
+<rect x="249" y="289" width="10" height="10" fill="#444444"><title>2025-08-22: 4,869 additions, 13 commits</title></rect>
+<rect x="249" y="302" width="10" height="10" fill="#444444"><title>2025-08-23: 10,069 additions, 12 commits</title></rect>
+<rect x="262" y="224" width="10" height="10" fill="#eeeeee"><title>2025-08-24: 0 additions, 0 commits</title></rect>
+<rect x="262" y="237" width="10" height="10" fill="#444444"><title>2025-08-25: 2,483 additions, 17 commits</title></rect>
+<rect x="262" y="250" width="10" height="10" fill="#777777"><title>2025-08-26: 1,120 additions, 14 commits</title></rect>
+<rect x="262" y="263" width="10" height="10" fill="#444444"><title>2025-08-27: 3,608 additions, 9 commits</title></rect>
+<rect x="262" y="276" width="10" height="10" fill="#777777"><title>2025-08-28: 1,177 additions, 5 commits</title></rect>
+<rect x="262" y="289" width="10" height="10" fill="#444444"><title>2025-08-29: 3,406 additions, 4 commits</title></rect>
+<rect x="262" y="302" width="10" height="10" fill="#777777"><title>2025-08-30: 336 additions, 1 commits</title></rect>
+<rect x="275" y="224" width="10" height="10" fill="#eeeeee"><title>2025-08-31: 0 additions, 0 commits</title></rect>
+<rect x="275" y="237" width="10" height="10" fill="#eeeeee"><title>2025-09-01: 0 additions, 0 commits</title></rect>
+<rect x="275" y="250" width="10" height="10" fill="#444444"><title>2025-09-02: 3,217 additions, 12 commits</title></rect>
+<rect x="275" y="263" width="10" height="10" fill="#777777"><title>2025-09-03: 1,471 additions, 12 commits</title></rect>
+<rect x="275" y="276" width="10" height="10" fill="#eeeeee"><title>2025-09-04: 0 additions, 0 commits</title></rect>
+<rect x="275" y="289" width="10" height="10" fill="#444444"><title>2025-09-05: 2,692 additions, 1 commits</title></rect>
+<rect x="275" y="302" width="10" height="10" fill="#eeeeee"><title>2025-09-06: 0 additions, 1 commits</title></rect>
+<rect x="288" y="224" width="10" height="10" fill="#aaaaaa"><title>2025-09-07: 21 additions, 1 commits</title></rect>
+<rect x="288" y="237" width="10" height="10" fill="#444444"><title>2025-09-08: 6,868 additions, 6 commits</title></rect>
+<rect x="288" y="250" width="10" height="10" fill="#777777"><title>2025-09-09: 1,659 additions, 5 commits</title></rect>
+<rect x="288" y="263" width="10" height="10" fill="#777777"><title>2025-09-10: 1,086 additions, 5 commits</title></rect>
+<rect x="288" y="276" width="10" height="10" fill="#777777"><title>2025-09-11: 970 additions, 6 commits</title></rect>
+<rect x="288" y="289" width="10" height="10" fill="#777777"><title>2025-09-12: 2,143 additions, 3 commits</title></rect>
+<rect x="288" y="302" width="10" height="10" fill="#444444"><title>2025-09-13: 5,042 additions, 2 commits</title></rect>
+<rect x="301" y="224" width="10" height="10" fill="#777777"><title>2025-09-14: 1,147 additions, 1 commits</title></rect>
+<rect x="301" y="237" width="10" height="10" fill="#444444"><title>2025-09-15: 11,867 additions, 21 commits</title></rect>
+<rect x="301" y="250" width="10" height="10" fill="#777777"><title>2025-09-16: 2,181 additions, 9 commits</title></rect>
+<rect x="301" y="263" width="10" height="10" fill="#777777"><title>2025-09-17: 991 additions, 14 commits</title></rect>
+<rect x="301" y="276" width="10" height="10" fill="#777777"><title>2025-09-18: 896 additions, 12 commits</title></rect>
+<rect x="301" y="289" width="10" height="10" fill="#aaaaaa"><title>2025-09-19: 63 additions, 6 commits</title></rect>
+<rect x="301" y="302" width="10" height="10" fill="#aaaaaa"><title>2025-09-20: 152 additions, 2 commits</title></rect>
+<rect x="314" y="224" width="10" height="10" fill="#aaaaaa"><title>2025-09-21: 18 additions, 5 commits</title></rect>
+<rect x="314" y="237" width="10" height="10" fill="#444444"><title>2025-09-22: 2,564 additions, 9 commits</title></rect>
+<rect x="314" y="250" width="10" height="10" fill="#777777"><title>2025-09-23: 736 additions, 11 commits</title></rect>
+<rect x="314" y="263" width="10" height="10" fill="#eeeeee"><title>2025-09-24: 0 additions, 1 commits</title></rect>
+<rect x="314" y="276" width="10" height="10" fill="#777777"><title>2025-09-25: 965 additions, 2 commits</title></rect>
+<rect x="314" y="289" width="10" height="10" fill="#777777"><title>2025-09-26: 1,113 additions, 5 commits</title></rect>
+<rect x="314" y="302" width="10" height="10" fill="#eeeeee"><title>2025-09-27: 0 additions, 0 commits</title></rect>
+<rect x="327" y="224" width="10" height="10" fill="#eeeeee"><title>2025-09-28: 0 additions, 0 commits</title></rect>
+<rect x="327" y="237" width="10" height="10" fill="#444444"><title>2025-09-29: 4,720 additions, 12 commits</title></rect>
+<rect x="327" y="250" width="10" height="10" fill="#444444"><title>2025-09-30: 7,174 additions, 23 commits</title></rect>
+<rect x="327" y="263" width="10" height="10" fill="#444444"><title>2025-10-01: 4,172 additions, 8 commits</title></rect>
+<rect x="327" y="276" width="10" height="10" fill="#aaaaaa"><title>2025-10-02: 99 additions, 1 commits</title></rect>
+<rect x="327" y="289" width="10" height="10" fill="#eeeeee"><title>2025-10-03: 0 additions, 0 commits</title></rect>
+<rect x="327" y="302" width="10" height="10" fill="#eeeeee"><title>2025-10-04: 0 additions, 0 commits</title></rect>
+<rect x="340" y="224" width="10" height="10" fill="#eeeeee"><title>2025-10-05: 0 additions, 0 commits</title></rect>
+<rect x="340" y="237" width="10" height="10" fill="#eeeeee"><title>2025-10-06: 0 additions, 0 commits</title></rect>
+<rect x="340" y="250" width="10" height="10" fill="#eeeeee"><title>2025-10-07: 0 additions, 0 commits</title></rect>
+<rect x="340" y="263" width="10" height="10" fill="#eeeeee"><title>2025-10-08: 0 additions, 0 commits</title></rect>
+<rect x="340" y="276" width="10" height="10" fill="#aaaaaa"><title>2025-10-09: 93 additions, 10 commits</title></rect>
+<rect x="340" y="289" width="10" height="10" fill="#aaaaaa"><title>2025-10-10: 48 additions, 1 commits</title></rect>
+<rect x="340" y="302" width="10" height="10" fill="#aaaaaa"><title>2025-10-11: 22 additions, 1 commits</title></rect>
+<rect x="353" y="224" width="10" height="10" fill="#eeeeee"><title>2025-10-12: 0 additions, 0 commits</title></rect>
+<rect x="353" y="237" width="10" height="10" fill="#aaaaaa"><title>2025-10-13: 171 additions, 3 commits</title></rect>
+<rect x="353" y="250" width="10" height="10" fill="#aaaaaa"><title>2025-10-14: 62 additions, 3 commits</title></rect>
+<rect x="353" y="263" width="10" height="10" fill="#444444"><title>2025-10-15: 2,706 additions, 7 commits</title></rect>
+<rect x="353" y="276" width="10" height="10" fill="#eeeeee"><title>2025-10-16: 0 additions, 0 commits</title></rect>
+<rect x="353" y="289" width="10" height="10" fill="#aaaaaa"><title>2025-10-17: 23 additions, 2 commits</title></rect>
+<rect x="353" y="302" width="10" height="10" fill="#444444"><title>2025-10-18: 10,837 additions, 2 commits</title></rect>
+<rect x="366" y="224" width="10" height="10" fill="#eeeeee"><title>2025-10-19: 0 additions, 0 commits</title></rect>
+<rect x="366" y="237" width="10" height="10" fill="#777777"><title>2025-10-20: 1,797 additions, 7 commits</title></rect>
+<rect x="366" y="250" width="10" height="10" fill="#444444"><title>2025-10-21: 4,824 additions, 5 commits</title></rect>
+<rect x="366" y="263" width="10" height="10" fill="#777777"><title>2025-10-22: 520 additions, 3 commits</title></rect>
+<rect x="366" y="276" width="10" height="10" fill="#777777"><title>2025-10-23: 611 additions, 10 commits</title></rect>
+<rect x="366" y="289" width="10" height="10" fill="#777777"><title>2025-10-24: 1,652 additions, 6 commits</title></rect>
+<rect x="366" y="302" width="10" height="10" fill="#eeeeee"><title>2025-10-25: 0 additions, 0 commits</title></rect>
+<rect x="379" y="224" width="10" height="10" fill="#eeeeee"><title>2025-10-26: 0 additions, 0 commits</title></rect>
+<rect x="379" y="237" width="10" height="10" fill="#444444"><title>2025-10-27: 4,153 additions, 36 commits</title></rect>
+<rect x="379" y="250" width="10" height="10" fill="#444444"><title>2025-10-28: 8,657 additions, 26 commits</title></rect>
+<rect x="379" y="263" width="10" height="10" fill="#444444"><title>2025-10-29: 2,965 additions, 18 commits</title></rect>
+<rect x="379" y="276" width="10" height="10" fill="#777777"><title>2025-10-30: 1,370 additions, 17 commits</title></rect>
+<rect x="379" y="289" width="10" height="10" fill="#777777"><title>2025-10-31: 1,182 additions, 15 commits</title></rect>
+<rect x="379" y="302" width="10" height="10" fill="#eeeeee"><title>2025-11-01: 0 additions, 0 commits</title></rect>
+<rect x="392" y="224" width="10" height="10" fill="#eeeeee"><title>2025-11-02: 0 additions, 0 commits</title></rect>
+<rect x="392" y="237" width="10" height="10" fill="#777777"><title>2025-11-03: 850 additions, 43 commits</title></rect>
+<rect x="392" y="250" width="10" height="10" fill="#444444"><title>2025-11-04: 4,687 additions, 19 commits</title></rect>
+<rect x="392" y="263" width="10" height="10" fill="#444444"><title>2025-11-05: 2,553 additions, 14 commits</title></rect>
+<rect x="392" y="276" width="10" height="10" fill="#444444"><title>2025-11-06: 8,482 additions, 9 commits</title></rect>
+<rect x="392" y="289" width="10" height="10" fill="#444444"><title>2025-11-07: 3,628 additions, 15 commits</title></rect>
+<rect x="392" y="302" width="10" height="10" fill="#aaaaaa"><title>2025-11-08: 99 additions, 7 commits</title></rect>
+<rect x="405" y="224" width="10" height="10" fill="#444444"><title>2025-11-09: 12,049 additions, 6 commits</title></rect>
+<rect x="405" y="237" width="10" height="10" fill="#444444"><title>2025-11-10: 5,553 additions, 22 commits</title></rect>
+<rect x="405" y="250" width="10" height="10" fill="#444444"><title>2025-11-11: 2,558 additions, 38 commits</title></rect>
+<rect x="405" y="263" width="10" height="10" fill="#777777"><title>2025-11-12: 1,460 additions, 27 commits</title></rect>
+<rect x="405" y="276" width="10" height="10" fill="#444444"><title>2025-11-13: 4,365 additions, 40 commits</title></rect>
+<rect x="405" y="289" width="10" height="10" fill="#eeeeee"><title>2025-11-14: 0 additions, 0 commits</title></rect>
+<rect x="405" y="302" width="10" height="10" fill="#d0d0d0"><title>2025-11-15: 1 additions, 2 commits</title></rect>
+<rect x="418" y="224" width="10" height="10" fill="#444444"><title>2025-11-16: 8,652 additions, 13 commits</title></rect>
+<rect x="418" y="237" width="10" height="10" fill="#444444"><title>2025-11-17: 4,443 additions, 11 commits</title></rect>
+<rect x="418" y="250" width="10" height="10" fill="#777777"><title>2025-11-18: 1,733 additions, 22 commits</title></rect>
+<rect x="418" y="263" width="10" height="10" fill="#444444"><title>2025-11-19: 7,153 additions, 31 commits</title></rect>
+<rect x="418" y="276" width="10" height="10" fill="#777777"><title>2025-11-20: 1,845 additions, 16 commits</title></rect>
+<rect x="418" y="289" width="10" height="10" fill="#777777"><title>2025-11-21: 299 additions, 5 commits</title></rect>
+<rect x="418" y="302" width="10" height="10" fill="#aaaaaa"><title>2025-11-22: 34 additions, 3 commits</title></rect>
+<rect x="431" y="224" width="10" height="10" fill="#d0d0d0"><title>2025-11-23: 9 additions, 2 commits</title></rect>
+<rect x="431" y="237" width="10" height="10" fill="#777777"><title>2025-11-24: 321 additions, 7 commits</title></rect>
+<rect x="431" y="250" width="10" height="10" fill="#444444"><title>2025-11-25: 3,974 additions, 11 commits</title></rect>
+<rect x="431" y="263" width="10" height="10" fill="#777777"><title>2025-11-26: 1,601 additions, 2 commits</title></rect>
+<rect x="431" y="276" width="10" height="10" fill="#444444"><title>2025-11-27: 6,202 additions, 3 commits</title></rect>
+<rect x="431" y="289" width="10" height="10" fill="#777777"><title>2025-11-28: 491 additions, 2 commits</title></rect>
+<rect x="431" y="302" width="10" height="10" fill="#444444"><title>2025-11-29: 6,544 additions, 12 commits</title></rect>
+<rect x="444" y="224" width="10" height="10" fill="#eeeeee"><title>2025-11-30: 0 additions, 0 commits</title></rect>
+<rect x="444" y="237" width="10" height="10" fill="#777777"><title>2025-12-01: 1,349 additions, 10 commits</title></rect>
+<rect x="444" y="250" width="10" height="10" fill="#777777"><title>2025-12-02: 314 additions, 12 commits</title></rect>
+<rect x="444" y="263" width="10" height="10" fill="#aaaaaa"><title>2025-12-03: 62 additions, 4 commits</title></rect>
+<rect x="444" y="276" width="10" height="10" fill="#111111"><title>2025-12-04: 33,813 additions, 22 commits</title></rect>
+<rect x="444" y="289" width="10" height="10" fill="#777777"><title>2025-12-05: 271 additions, 5 commits</title></rect>
+<rect x="444" y="302" width="10" height="10" fill="#777777"><title>2025-12-06: 476 additions, 3 commits</title></rect>
+<rect x="457" y="224" width="10" height="10" fill="#eeeeee"><title>2025-12-07: 0 additions, 0 commits</title></rect>
+<rect x="457" y="237" width="10" height="10" fill="#aaaaaa"><title>2025-12-08: 66 additions, 6 commits</title></rect>
+<rect x="457" y="250" width="10" height="10" fill="#777777"><title>2025-12-09: 1,024 additions, 4 commits</title></rect>
+<rect x="457" y="263" width="10" height="10" fill="#777777"><title>2025-12-10: 214 additions, 7 commits</title></rect>
+<rect x="457" y="276" width="10" height="10" fill="#777777"><title>2025-12-11: 812 additions, 12 commits</title></rect>
+<rect x="457" y="289" width="10" height="10" fill="#777777"><title>2025-12-12: 253 additions, 8 commits</title></rect>
+<rect x="457" y="302" width="10" height="10" fill="#eeeeee"><title>2025-12-13: 0 additions, 0 commits</title></rect>
+<rect x="470" y="224" width="10" height="10" fill="#eeeeee"><title>2025-12-14: 0 additions, 0 commits</title></rect>
+<rect x="470" y="237" width="10" height="10" fill="#777777"><title>2025-12-15: 605 additions, 9 commits</title></rect>
+<rect x="470" y="250" width="10" height="10" fill="#aaaaaa"><title>2025-12-16: 53 additions, 8 commits</title></rect>
+<rect x="470" y="263" width="10" height="10" fill="#777777"><title>2025-12-17: 432 additions, 12 commits</title></rect>
+<rect x="470" y="276" width="10" height="10" fill="#777777"><title>2025-12-18: 1,607 additions, 9 commits</title></rect>
+<rect x="470" y="289" width="10" height="10" fill="#777777"><title>2025-12-19: 223 additions, 9 commits</title></rect>
+<rect x="470" y="302" width="10" height="10" fill="#d0d0d0"><title>2025-12-20: 2 additions, 1 commits</title></rect>
+<rect x="483" y="224" width="10" height="10" fill="#eeeeee"><title>2025-12-21: 0 additions, 0 commits</title></rect>
+<rect x="483" y="237" width="10" height="10" fill="#aaaaaa"><title>2025-12-22: 19 additions, 1 commits</title></rect>
+<rect x="483" y="250" width="10" height="10" fill="#eeeeee"><title>2025-12-23: 0 additions, 0 commits</title></rect>
+<rect x="483" y="263" width="10" height="10" fill="#eeeeee"><title>2025-12-24: 0 additions, 0 commits</title></rect>
+<rect x="483" y="276" width="10" height="10" fill="#eeeeee"><title>2025-12-25: 0 additions, 0 commits</title></rect>
+<rect x="483" y="289" width="10" height="10" fill="#eeeeee"><title>2025-12-26: 0 additions, 0 commits</title></rect>
+<rect x="483" y="302" width="10" height="10" fill="#777777"><title>2025-12-27: 302 additions, 7 commits</title></rect>
+<rect x="496" y="224" width="10" height="10" fill="#eeeeee"><title>2025-12-28: 0 additions, 0 commits</title></rect>
+<rect x="496" y="237" width="10" height="10" fill="#777777"><title>2025-12-29: 260 additions, 10 commits</title></rect>
+<rect x="496" y="250" width="10" height="10" fill="#777777"><title>2025-12-30: 780 additions, 7 commits</title></rect>
+<rect x="496" y="263" width="10" height="10" fill="#eeeeee"><title>2025-12-31: 0 additions, 0 commits</title></rect>
+<rect x="496" y="276" width="10" height="10" fill="#eeeeee"><title>2026-01-01: 0 additions, 0 commits</title></rect>
+<rect x="496" y="289" width="10" height="10" fill="#eeeeee"><title>2026-01-02: 0 additions, 0 commits</title></rect>
+<rect x="496" y="302" width="10" height="10" fill="#eeeeee"><title>2026-01-03: 0 additions, 0 commits</title></rect>
+<rect x="509" y="224" width="10" height="10" fill="#eeeeee"><title>2026-01-04: 0 additions, 0 commits</title></rect>
+<rect x="509" y="237" width="10" height="10" fill="#444444"><title>2026-01-05: 3,139 additions, 10 commits</title></rect>
+<rect x="509" y="250" width="10" height="10" fill="#777777"><title>2026-01-06: 1,798 additions, 20 commits</title></rect>
+<rect x="509" y="263" width="10" height="10" fill="#aaaaaa"><title>2026-01-07: 50 additions, 3 commits</title></rect>
+<rect x="509" y="276" width="10" height="10" fill="#777777"><title>2026-01-08: 1,272 additions, 10 commits</title></rect>
+<rect x="509" y="289" width="10" height="10" fill="#777777"><title>2026-01-09: 330 additions, 6 commits</title></rect>
+<rect x="509" y="302" width="10" height="10" fill="#eeeeee"><title>2026-01-10: 0 additions, 0 commits</title></rect>
+<rect x="522" y="224" width="10" height="10" fill="#eeeeee"><title>2026-01-11: 0 additions, 1 commits</title></rect>
+<rect x="522" y="237" width="10" height="10" fill="#777777"><title>2026-01-12: 313 additions, 7 commits</title></rect>
+<rect x="522" y="250" width="10" height="10" fill="#777777"><title>2026-01-13: 287 additions, 12 commits</title></rect>
+<rect x="522" y="263" width="10" height="10" fill="#777777"><title>2026-01-14: 411 additions, 6 commits</title></rect>
+<rect x="522" y="276" width="10" height="10" fill="#777777"><title>2026-01-15: 2,029 additions, 7 commits</title></rect>
+<rect x="522" y="289" width="10" height="10" fill="#aaaaaa"><title>2026-01-16: 17 additions, 1 commits</title></rect>
+<rect x="522" y="302" width="10" height="10" fill="#aaaaaa"><title>2026-01-17: 59 additions, 2 commits</title></rect>
+<rect x="535" y="224" width="10" height="10" fill="#eeeeee"><title>2026-01-18: 0 additions, 0 commits</title></rect>
+<rect x="535" y="237" width="10" height="10" fill="#eeeeee"><title>2026-01-19: 0 additions, 0 commits</title></rect>
+<rect x="535" y="250" width="10" height="10" fill="#eeeeee"><title>2026-01-20: 0 additions, 0 commits</title></rect>
+<rect x="535" y="263" width="10" height="10" fill="#444444"><title>2026-01-21: 17,410 additions, 5 commits</title></rect>
+<rect x="535" y="276" width="10" height="10" fill="#777777"><title>2026-01-22: 235 additions, 1 commits</title></rect>
+<rect x="535" y="289" width="10" height="10" fill="#777777"><title>2026-01-23: 378 additions, 9 commits</title></rect>
+<rect x="535" y="302" width="10" height="10" fill="#444444"><title>2026-01-24: 5,134 additions, 18 commits</title></rect>
+<rect x="548" y="224" width="10" height="10" fill="#444444"><title>2026-01-25: 3,279 additions, 30 commits</title></rect>
+<rect x="548" y="237" width="10" height="10" fill="#aaaaaa"><title>2026-01-26: 124 additions, 8 commits</title></rect>
+<rect x="548" y="250" width="10" height="10" fill="#777777"><title>2026-01-27: 754 additions, 8 commits</title></rect>
+<rect x="548" y="263" width="10" height="10" fill="#aaaaaa"><title>2026-01-28: 59 additions, 10 commits</title></rect>
+<rect x="548" y="276" width="10" height="10" fill="#aaaaaa"><title>2026-01-29: 28 additions, 7 commits</title></rect>
+<rect x="548" y="289" width="10" height="10" fill="#eeeeee"><title>2026-01-30: 0 additions, 0 commits</title></rect>
+<rect x="548" y="302" width="10" height="10" fill="#aaaaaa"><title>2026-01-31: 18 additions, 4 commits</title></rect>
+<rect x="561" y="224" width="10" height="10" fill="#eeeeee"><title>2026-02-01: 0 additions, 0 commits</title></rect>
+<rect x="561" y="237" width="10" height="10" fill="#777777"><title>2026-02-02: 489 additions, 5 commits</title></rect>
+<rect x="561" y="250" width="10" height="10" fill="#777777"><title>2026-02-03: 886 additions, 12 commits</title></rect>
+<rect x="561" y="263" width="10" height="10" fill="#aaaaaa"><title>2026-02-04: 30 additions, 3 commits</title></rect>
+<rect x="561" y="276" width="10" height="10" fill="#eeeeee"><title>2026-02-05: 0 additions, 0 commits</title></rect>
+<rect x="561" y="289" width="10" height="10" fill="#777777"><title>2026-02-06: 722 additions, 9 commits</title></rect>
+<rect x="561" y="302" width="10" height="10" fill="#eeeeee"><title>2026-02-07: 0 additions, 0 commits</title></rect>
+<rect x="574" y="224" width="10" height="10" fill="#eeeeee"><title>2026-02-08: 0 additions, 0 commits</title></rect>
+<rect x="574" y="237" width="10" height="10" fill="#aaaaaa"><title>2026-02-09: 102 additions, 6 commits</title></rect>
+<rect x="574" y="250" width="10" height="10" fill="#777777"><title>2026-02-10: 1,857 additions, 17 commits</title></rect>
+<rect x="574" y="263" width="10" height="10" fill="#777777"><title>2026-02-11: 576 additions, 9 commits</title></rect>
+<rect x="574" y="276" width="10" height="10" fill="#777777"><title>2026-02-12: 277 additions, 23 commits</title></rect>
+<rect x="574" y="289" width="10" height="10" fill="#777777"><title>2026-02-13: 301 additions, 1 commits</title></rect>
+<rect x="574" y="302" width="10" height="10" fill="#eeeeee"><title>2026-02-14: 0 additions, 0 commits</title></rect>
+<rect x="587" y="224" width="10" height="10" fill="#eeeeee"><title>2026-02-15: 0 additions, 0 commits</title></rect>
+<rect x="587" y="237" width="10" height="10" fill="#aaaaaa"><title>2026-02-16: 84 additions, 15 commits</title></rect>
+<rect x="587" y="250" width="10" height="10" fill="#aaaaaa"><title>2026-02-17: 162 additions, 14 commits</title></rect>
+<rect x="587" y="263" width="10" height="10" fill="#777777"><title>2026-02-18: 217 additions, 7 commits</title></rect>
+<rect x="587" y="276" width="10" height="10" fill="#444444"><title>2026-02-19: 5,375 additions, 46 commits</title></rect>
+<rect x="587" y="289" width="10" height="10" fill="#444444"><title>2026-02-20: 4,353 additions, 73 commits</title></rect>
+<rect x="587" y="302" width="10" height="10" fill="#777777"><title>2026-02-21: 649 additions, 37 commits</title></rect>
+<rect x="600" y="224" width="10" height="10" fill="#777777"><title>2026-02-22: 1,089 additions, 24 commits</title></rect>
+<rect x="600" y="237" width="10" height="10" fill="#777777"><title>2026-02-23: 889 additions, 38 commits</title></rect>
+<rect x="600" y="250" width="10" height="10" fill="#777777"><title>2026-02-24: 252 additions, 18 commits</title></rect>
+<rect x="600" y="263" width="10" height="10" fill="#444444"><title>2026-02-25: 4,864 additions, 15 commits</title></rect>
+<rect x="600" y="276" width="10" height="10" fill="#444444"><title>2026-02-26: 5,123 additions, 12 commits</title></rect>
+<rect x="600" y="289" width="10" height="10" fill="#777777"><title>2026-02-27: 1,651 additions, 16 commits</title></rect>
+<rect x="600" y="302" width="10" height="10" fill="#444444"><title>2026-02-28: 6,065 additions, 17 commits</title></rect>
+<rect x="613" y="224" width="10" height="10" fill="#777777"><title>2026-03-01: 473 additions, 27 commits</title></rect>
+<rect x="613" y="237" width="10" height="10" fill="#aaaaaa"><title>2026-03-02: 33 additions, 1 commits</title></rect>
+<rect x="613" y="250" width="10" height="10" fill="#444444"><title>2026-03-03: 7,187 additions, 8 commits</title></rect>
+<rect x="613" y="263" width="10" height="10" fill="#444444"><title>2026-03-04: 3,654 additions, 6 commits</title></rect>
+<rect x="613" y="276" width="10" height="10" fill="#777777"><title>2026-03-05: 312 additions, 19 commits</title></rect>
+<rect x="613" y="289" width="10" height="10" fill="#444444"><title>2026-03-06: 14,983 additions, 9 commits</title></rect>
+<rect x="613" y="302" width="10" height="10" fill="#777777"><title>2026-03-07: 628 additions, 1 commits</title></rect>
+<rect x="626" y="224" width="10" height="10" fill="#aaaaaa"><title>2026-03-08: 45 additions, 3 commits</title></rect>
+<rect x="626" y="237" width="10" height="10" fill="#444444"><title>2026-03-09: 4,272 additions, 1 commits</title></rect>
+<rect x="626" y="250" width="10" height="10" fill="#777777"><title>2026-03-10: 246 additions, 11 commits</title></rect>
+<rect x="626" y="263" width="10" height="10" fill="#444444"><title>2026-03-11: 3,036 additions, 2 commits</title></rect>
+<rect x="626" y="276" width="10" height="10" fill="#aaaaaa"><title>2026-03-12: 64 additions, 2 commits</title></rect>
+<rect x="626" y="289" width="10" height="10" fill="#444444"><title>2026-03-13: 3,230 additions, 1 commits</title></rect>
+<rect x="626" y="302" width="10" height="10" fill="#eeeeee"><title>2026-03-14: 0 additions, 0 commits</title></rect>
+<rect x="639" y="224" width="10" height="10" fill="#777777"><title>2026-03-15: 529 additions, 1 commits</title></rect>
+<rect x="639" y="237" width="10" height="10" fill="#777777"><title>2026-03-16: 410 additions, 5 commits</title></rect>
+<rect x="639" y="250" width="10" height="10" fill="#111111"><title>2026-03-17: 28,340 additions, 7 commits</title></rect>
+<rect x="639" y="263" width="10" height="10" fill="#444444"><title>2026-03-18: 3,104 additions, 22 commits</title></rect>
+<rect x="639" y="276" width="10" height="10" fill="#777777"><title>2026-03-19: 533 additions, 4 commits</title></rect>
+<rect x="639" y="289" width="10" height="10" fill="#777777"><title>2026-03-20: 328 additions, 4 commits</title></rect>
+<rect x="639" y="302" width="10" height="10" fill="#777777"><title>2026-03-21: 608 additions, 4 commits</title></rect>
+<rect x="652" y="224" width="10" height="10" fill="#777777"><title>2026-03-22: 221 additions, 2 commits</title></rect>
+<rect x="652" y="237" width="10" height="10" fill="#777777"><title>2026-03-23: 1,253 additions, 14 commits</title></rect>
+<rect x="652" y="250" width="10" height="10" fill="#777777"><title>2026-03-24: 869 additions, 4 commits</title></rect>
+<rect x="652" y="263" width="10" height="10" fill="#444444"><title>2026-03-25: 2,846 additions, 12 commits</title></rect>
+<rect x="652" y="276" width="10" height="10" fill="#eeeeee"><title>2026-03-26: 0 additions, 0 commits</title></rect>
+<rect x="652" y="289" width="10" height="10" fill="#444444"><title>2026-03-27: 2,741 additions, 10 commits</title></rect>
+<rect x="652" y="302" width="10" height="10" fill="#444444"><title>2026-03-28: 11,627 additions, 4 commits</title></rect>
+<rect x="665" y="224" width="10" height="10" fill="#eeeeee"><title>2026-03-29: 0 additions, 0 commits</title></rect>
+<rect x="665" y="237" width="10" height="10" fill="#777777"><title>2026-03-30: 893 additions, 2 commits</title></rect>
+<rect x="665" y="250" width="10" height="10" fill="#444444"><title>2026-03-31: 4,688 additions, 10 commits</title></rect>
+<rect x="665" y="263" width="10" height="10" fill="#777777"><title>2026-04-01: 2,029 additions, 9 commits</title></rect>
+<rect x="665" y="276" width="10" height="10" fill="#777777"><title>2026-04-02: 877 additions, 9 commits</title></rect>
+<rect x="665" y="289" width="10" height="10" fill="#777777"><title>2026-04-03: 294 additions, 5 commits</title></rect>
+<rect x="665" y="302" width="10" height="10" fill="#eeeeee"><title>2026-04-04: 0 additions, 0 commits</title></rect>
+<rect x="678" y="224" width="10" height="10" fill="#777777"><title>2026-04-05: 1,590 additions, 2 commits</title></rect>
+<rect x="678" y="237" width="10" height="10" fill="#444444"><title>2026-04-06: 3,383 additions, 12 commits</title></rect>
+<rect x="678" y="250" width="10" height="10" fill="#444444"><title>2026-04-07: 9,679 additions, 13 commits</title></rect>
+<rect x="678" y="263" width="10" height="10" fill="#444444"><title>2026-04-08: 25,762 additions, 6 commits</title></rect>
+<rect x="678" y="276" width="10" height="10" fill="#777777"><title>2026-04-09: 2,225 additions, 3 commits</title></rect>
+<rect x="678" y="289" width="10" height="10" fill="#eeeeee"><title>2026-04-10: 0 additions, 0 commits</title></rect>
+<rect x="678" y="302" width="10" height="10" fill="#777777"><title>2026-04-11: 824 additions, 1 commits</title></rect>
+<rect x="691" y="224" width="10" height="10" fill="#eeeeee"><title>2026-04-12: 0 additions, 0 commits</title></rect>
+<rect x="691" y="237" width="10" height="10" fill="#444444"><title>2026-04-13: 5,823 additions, 10 commits</title></rect>
+<rect x="691" y="250" width="10" height="10" fill="#777777"><title>2026-04-14: 644 additions, 12 commits</title></rect>
+<rect x="691" y="263" width="10" height="10" fill="#111111"><title>2026-04-15: 257,564 additions, 8 commits</title></rect>
+<rect x="691" y="276" width="10" height="10" fill="#444444"><title>2026-04-16: 3,057 additions, 6 commits</title></rect>
+<rect x="691" y="289" width="10" height="10" fill="#777777"><title>2026-04-17: 779 additions, 2 commits</title></rect>
+<rect x="691" y="302" width="10" height="10" fill="#eeeeee"><title>2026-04-18: 0 additions, 0 commits</title></rect>
+<rect x="704" y="224" width="10" height="10" fill="#777777"><title>2026-04-19: 1,736 additions, 1 commits</title></rect>
+<rect x="704" y="237" width="10" height="10" fill="#444444"><title>2026-04-20: 3,665 additions, 4 commits</title></rect>
+<rect x="704" y="250" width="10" height="10" fill="#777777"><title>2026-04-21: 1,689 additions, 7 commits</title></rect>
+<rect x="704" y="263" width="10" height="10" fill="#444444"><title>2026-04-22: 4,066 additions, 13 commits</title></rect>
+<rect x="704" y="276" width="10" height="10" fill="#777777"><title>2026-04-23: 247 additions, 4 commits</title></rect>
+<rect x="704" y="289" width="10" height="10" fill="#777777"><title>2026-04-24: 2,031 additions, 9 commits</title></rect>
+<rect x="704" y="302" width="10" height="10" fill="#eeeeee"><title>2026-04-25: 0 additions, 0 commits</title></rect>
+<rect x="717" y="224" width="10" height="10" fill="#444444"><title>2026-04-26: 3,133 additions, 17 commits</title></rect>
+<rect x="717" y="237" width="10" height="10" fill="#444444"><title>2026-04-27: 5,969 additions, 18 commits</title></rect>
+<rect x="717" y="250" width="10" height="10" fill="#777777"><title>2026-04-28: 1,979 additions, 23 commits</title></rect>
+<rect x="717" y="263" width="10" height="10" fill="#444444"><title>2026-04-29: 3,266 additions, 27 commits</title></rect>
+<rect x="717" y="276" width="10" height="10" fill="#777777"><title>2026-04-30: 1,298 additions, 26 commits</title></rect>
+<rect x="717" y="289" width="10" height="10" fill="#777777"><title>2026-05-01: 2,042 additions, 18 commits</title></rect>
+<rect x="717" y="302" width="10" height="10" fill="#777777"><title>2026-05-02: 290 additions, 7 commits</title></rect>
+<rect x="730" y="224" width="10" height="10" fill="#eeeeee"><title>2026-05-03: 0 additions, 0 commits</title></rect>
+<text x="600" y="332" class="tag">&lt;/daily-grid&gt;</text>
+<text x="54" y="370" class="tag">&lt;bar-chart interval="3d" scale="log"&gt;</text>
+<line x1="54" y1="456" x2="1040" y2="456" class="line"/>
+<rect x="54" y="413.6" width="5" height="42.4" fill="#111111"><title>2025-05-04: 1,910 additions</title></rect>
+<rect x="62" y="415.4" width="5" height="40.6" fill="#111111"><title>2025-05-07: 1,368 additions</title></rect>
+<rect x="70" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-05-10: 0 additions</title></rect>
+<rect x="78" y="408.9" width="5" height="47.1" fill="#111111"><title>2025-05-13: 4,379 additions</title></rect>
+<rect x="86" y="410.9" width="5" height="45.1" fill="#111111"><title>2025-05-16: 3,064 additions</title></rect>
+<rect x="94" y="421.8" width="5" height="34.2" fill="#111111"><title>2025-05-19: 443 additions</title></rect>
+<rect x="102" y="428.2" width="5" height="27.8" fill="#111111"><title>2025-05-22: 140 additions</title></rect>
+<rect x="110" y="413.7" width="5" height="42.3" fill="#111111"><title>2025-05-25: 1,867 additions</title></rect>
+<rect x="118" y="410.7" width="5" height="45.3" fill="#111111"><title>2025-05-28: 3,190 additions</title></rect>
+<rect x="126" y="436.5" width="5" height="19.5" fill="#111111"><title>2025-05-31: 31 additions</title></rect>
+<rect x="134" y="403.3" width="5" height="52.7" fill="#111111"><title>2025-06-03: 11,836 additions</title></rect>
+<rect x="142" y="412.5" width="5" height="43.5" fill="#111111"><title>2025-06-06: 2,288 additions</title></rect>
+<rect x="150" y="422.8" width="5" height="33.2" fill="#111111"><title>2025-06-09: 365 additions</title></rect>
+<rect x="158" y="417.2" width="5" height="38.8" fill="#111111"><title>2025-06-12: 994 additions</title></rect>
+<rect x="166" y="421.1" width="5" height="34.9" fill="#111111"><title>2025-06-15: 500 additions</title></rect>
+<rect x="174" y="416.8" width="5" height="39.2" fill="#111111"><title>2025-06-18: 1,078 additions</title></rect>
+<rect x="182" y="431.4" width="5" height="24.6" fill="#111111"><title>2025-06-21: 79 additions</title></rect>
+<rect x="190" y="412.9" width="5" height="43.1" fill="#111111"><title>2025-06-24: 2,127 additions</title></rect>
+<rect x="198" y="417.3" width="5" height="38.7" fill="#111111"><title>2025-06-27: 988 additions</title></rect>
+<rect x="206" y="415.7" width="5" height="40.3" fill="#111111"><title>2025-06-30: 1,296 additions</title></rect>
+<rect x="214" y="424.8" width="5" height="31.2" fill="#111111"><title>2025-07-03: 258 additions</title></rect>
+<rect x="222" y="440.8" width="5" height="15.2" fill="#111111"><title>2025-07-06: 14 additions</title></rect>
+<rect x="230" y="420.3" width="5" height="35.7" fill="#111111"><title>2025-07-09: 569 additions</title></rect>
+<rect x="238" y="430.5" width="5" height="25.5" fill="#111111"><title>2025-07-12: 93 additions</title></rect>
+<rect x="246" y="440.4" width="5" height="15.6" fill="#111111"><title>2025-07-15: 15 additions</title></rect>
+<rect x="254" y="419.1" width="5" height="36.9" fill="#111111"><title>2025-07-18: 706 additions</title></rect>
+<rect x="262" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-07-21: 0 additions</title></rect>
+<rect x="270" y="425.1" width="5" height="30.9" fill="#111111"><title>2025-07-24: 244 additions</title></rect>
+<rect x="278" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-07-27: 0 additions</title></rect>
+<rect x="286" y="434.6" width="5" height="21.4" fill="#111111"><title>2025-07-30: 44 additions</title></rect>
+<rect x="294" y="412.8" width="5" height="43.2" fill="#111111"><title>2025-08-02: 2,185 additions</title></rect>
+<rect x="302" y="407.9" width="5" height="48.1" fill="#111111"><title>2025-08-05: 5,201 additions</title></rect>
+<rect x="310" y="414.1" width="5" height="41.9" fill="#111111"><title>2025-08-08: 1,739 additions</title></rect>
+<rect x="318" y="418.4" width="5" height="37.6" fill="#111111"><title>2025-08-11: 805 additions</title></rect>
+<rect x="326" y="406.8" width="5" height="49.2" fill="#111111"><title>2025-08-14: 6,403 additions</title></rect>
+<rect x="334" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-08-17: 0 additions</title></rect>
+<rect x="342" y="410.6" width="5" height="45.4" fill="#111111"><title>2025-08-20: 3,223 additions</title></rect>
+<rect x="350" y="404.2" width="5" height="51.8" fill="#111111"><title>2025-08-23: 10,069 additions</title></rect>
+<rect x="358" y="416.5" width="5" height="39.5" fill="#111111"><title>2025-08-26: 1,120 additions</title></rect>
+<rect x="366" y="410.3" width="5" height="45.7" fill="#111111"><title>2025-08-29: 3,406 additions</title></rect>
+<rect x="374" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-09-01: 0 additions</title></rect>
+<rect x="382" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-09-04: 0 additions</title></rect>
+<rect x="390" y="438.6" width="5" height="17.4" fill="#111111"><title>2025-09-07: 21 additions</title></rect>
+<rect x="398" y="416.7" width="5" height="39.3" fill="#111111"><title>2025-09-10: 1,086 additions</title></rect>
+<rect x="406" y="408.1" width="5" height="47.9" fill="#111111"><title>2025-09-13: 5,042 additions</title></rect>
+<rect x="414" y="412.8" width="5" height="43.2" fill="#111111"><title>2025-09-16: 2,181 additions</title></rect>
+<rect x="422" y="432.6" width="5" height="23.4" fill="#111111"><title>2025-09-19: 63 additions</title></rect>
+<rect x="430" y="411.9" width="5" height="44.1" fill="#111111"><title>2025-09-22: 2,564 additions</title></rect>
+<rect x="438" y="417.4" width="5" height="38.6" fill="#111111"><title>2025-09-25: 965 additions</title></rect>
+<rect x="446" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-09-28: 0 additions</title></rect>
+<rect x="454" y="409.2" width="5" height="46.8" fill="#111111"><title>2025-10-01: 4,172 additions</title></rect>
+<rect x="462" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-10-04: 0 additions</title></rect>
+<rect x="470" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-10-07: 0 additions</title></rect>
+<rect x="478" y="434.1" width="5" height="21.9" fill="#111111"><title>2025-10-10: 48 additions</title></rect>
+<rect x="486" y="427.1" width="5" height="28.9" fill="#111111"><title>2025-10-13: 171 additions</title></rect>
+<rect x="494" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-10-16: 0 additions</title></rect>
+<rect x="502" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-10-19: 0 additions</title></rect>
+<rect x="510" y="420.9" width="5" height="35.1" fill="#111111"><title>2025-10-22: 520 additions</title></rect>
+<rect x="518" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-10-25: 0 additions</title></rect>
+<rect x="526" y="405.1" width="5" height="50.9" fill="#111111"><title>2025-10-28: 8,657 additions</title></rect>
+<rect x="534" y="416.2" width="5" height="39.8" fill="#111111"><title>2025-10-31: 1,182 additions</title></rect>
+<rect x="542" y="418.1" width="5" height="37.9" fill="#111111"><title>2025-11-03: 850 additions</title></rect>
+<rect x="550" y="405.2" width="5" height="50.8" fill="#111111"><title>2025-11-06: 8,482 additions</title></rect>
+<rect x="558" y="403.2" width="5" height="52.8" fill="#111111"><title>2025-11-09: 12,049 additions</title></rect>
+<rect x="566" y="415.1" width="5" height="40.9" fill="#111111"><title>2025-11-12: 1,460 additions</title></rect>
+<rect x="574" y="452.1" width="5" height="3.9" fill="#111111"><title>2025-11-15: 1 additions</title></rect>
+<rect x="582" y="414.1" width="5" height="41.9" fill="#111111"><title>2025-11-18: 1,733 additions</title></rect>
+<rect x="590" y="424.0" width="5" height="32.0" fill="#111111"><title>2025-11-21: 299 additions</title></rect>
+<rect x="598" y="423.6" width="5" height="32.4" fill="#111111"><title>2025-11-24: 321 additions</title></rect>
+<rect x="606" y="406.9" width="5" height="49.1" fill="#111111"><title>2025-11-27: 6,202 additions</title></rect>
+<rect x="614" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-11-30: 0 additions</title></rect>
+<rect x="622" y="432.7" width="5" height="23.3" fill="#111111"><title>2025-12-03: 62 additions</title></rect>
+<rect x="630" y="421.3" width="5" height="34.7" fill="#111111"><title>2025-12-06: 476 additions</title></rect>
+<rect x="638" y="417.1" width="5" height="38.9" fill="#111111"><title>2025-12-09: 1,024 additions</title></rect>
+<rect x="646" y="424.9" width="5" height="31.1" fill="#111111"><title>2025-12-12: 253 additions</title></rect>
+<rect x="654" y="420.0" width="5" height="36.0" fill="#111111"><title>2025-12-15: 605 additions</title></rect>
+<rect x="662" y="414.5" width="5" height="41.5" fill="#111111"><title>2025-12-18: 1,607 additions</title></rect>
+<rect x="670" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-12-21: 0 additions</title></rect>
+<rect x="678" y="456.0" width="5" height="0.0" fill="#111111"><title>2025-12-24: 0 additions</title></rect>
+<rect x="686" y="423.9" width="5" height="32.1" fill="#111111"><title>2025-12-27: 302 additions</title></rect>
+<rect x="694" y="418.6" width="5" height="37.4" fill="#111111"><title>2025-12-30: 780 additions</title></rect>
+<rect x="702" y="456.0" width="5" height="0.0" fill="#111111"><title>2026-01-02: 0 additions</title></rect>
+<rect x="710" y="410.8" width="5" height="45.2" fill="#111111"><title>2026-01-05: 3,139 additions</title></rect>
+<rect x="718" y="415.8" width="5" height="40.2" fill="#111111"><title>2026-01-08: 1,272 additions</title></rect>
+<rect x="726" y="456.0" width="5" height="0.0" fill="#111111"><title>2026-01-11: 0 additions</title></rect>
+<rect x="734" y="422.2" width="5" height="33.8" fill="#111111"><title>2026-01-14: 411 additions</title></rect>
+<rect x="742" y="433.0" width="5" height="23.0" fill="#111111"><title>2026-01-17: 59 additions</title></rect>
+<rect x="750" y="456.0" width="5" height="0.0" fill="#111111"><title>2026-01-20: 0 additions</title></rect>
+<rect x="758" y="422.6" width="5" height="33.4" fill="#111111"><title>2026-01-23: 378 additions</title></rect>
+<rect x="766" y="428.9" width="5" height="27.1" fill="#111111"><title>2026-01-26: 124 additions</title></rect>
+<rect x="774" y="437.1" width="5" height="18.9" fill="#111111"><title>2026-01-29: 28 additions</title></rect>
+<rect x="782" y="456.0" width="5" height="0.0" fill="#111111"><title>2026-02-01: 0 additions</title></rect>
+<rect x="790" y="436.7" width="5" height="19.3" fill="#111111"><title>2026-02-04: 30 additions</title></rect>
+<rect x="798" y="456.0" width="5" height="0.0" fill="#111111"><title>2026-02-07: 0 additions</title></rect>
+<rect x="806" y="413.7" width="5" height="42.3" fill="#111111"><title>2026-02-10: 1,857 additions</title></rect>
+<rect x="814" y="423.9" width="5" height="32.1" fill="#111111"><title>2026-02-13: 301 additions</title></rect>
+<rect x="822" y="431.0" width="5" height="25.0" fill="#111111"><title>2026-02-16: 84 additions</title></rect>
+<rect x="830" y="407.7" width="5" height="48.3" fill="#111111"><title>2026-02-19: 5,375 additions</title></rect>
+<rect x="838" y="416.7" width="5" height="39.3" fill="#111111"><title>2026-02-22: 1,089 additions</title></rect>
+<rect x="846" y="408.3" width="5" height="47.7" fill="#111111"><title>2026-02-25: 4,864 additions</title></rect>
+<rect x="854" y="407.1" width="5" height="48.9" fill="#111111"><title>2026-02-28: 6,065 additions</title></rect>
+<rect x="862" y="406.1" width="5" height="49.9" fill="#111111"><title>2026-03-03: 7,187 additions</title></rect>
+<rect x="870" y="402.0" width="5" height="54.0" fill="#111111"><title>2026-03-06: 14,983 additions</title></rect>
+<rect x="878" y="409.0" width="5" height="47.0" fill="#111111"><title>2026-03-09: 4,272 additions</title></rect>
+<rect x="886" y="432.5" width="5" height="23.5" fill="#111111"><title>2026-03-12: 64 additions</title></rect>
+<rect x="894" y="420.8" width="5" height="35.2" fill="#111111"><title>2026-03-15: 529 additions</title></rect>
+<rect x="902" y="410.8" width="5" height="45.2" fill="#111111"><title>2026-03-18: 3,104 additions</title></rect>
+<rect x="910" y="420.0" width="5" height="36.0" fill="#111111"><title>2026-03-21: 608 additions</title></rect>
+<rect x="918" y="418.0" width="5" height="38.0" fill="#111111"><title>2026-03-24: 869 additions</title></rect>
+<rect x="926" y="411.5" width="5" height="44.5" fill="#111111"><title>2026-03-27: 2,741 additions</title></rect>
+<rect x="934" y="417.8" width="5" height="38.2" fill="#111111"><title>2026-03-30: 893 additions</title></rect>
+<rect x="942" y="417.9" width="5" height="38.1" fill="#111111"><title>2026-04-02: 877 additions</title></rect>
+<rect x="950" y="414.6" width="5" height="41.4" fill="#111111"><title>2026-04-05: 1,590 additions</title></rect>
+<rect x="958" y="398.9" width="5" height="57.1" fill="#111111"><title>2026-04-08: 25,762 additions</title></rect>
+<rect x="966" y="418.3" width="5" height="37.7" fill="#111111"><title>2026-04-11: 824 additions</title></rect>
+<rect x="974" y="419.7" width="5" height="36.3" fill="#111111"><title>2026-04-14: 644 additions</title></rect>
+<rect x="982" y="418.6" width="5" height="37.4" fill="#111111"><title>2026-04-17: 779 additions</title></rect>
+<rect x="990" y="409.9" width="5" height="46.1" fill="#111111"><title>2026-04-20: 3,665 additions</title></rect>
+<rect x="998" y="425.0" width="5" height="31.0" fill="#111111"><title>2026-04-23: 247 additions</title></rect>
+<rect x="1006" y="410.8" width="5" height="45.2" fill="#111111"><title>2026-04-26: 3,133 additions</title></rect>
+<rect x="1014" y="410.5" width="5" height="45.5" fill="#111111"><title>2026-04-29: 3,266 additions</title></rect>
+<rect x="1022" y="424.1" width="5" height="31.9" fill="#111111"><title>2026-05-02: 290 additions</title></rect>
+<text x="54" y="484" class="tag">&lt;/bar-chart&gt; &lt;/section&gt;</text>
 </svg>

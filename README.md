@@ -2,19 +2,16 @@
 
 # Miles Low
 
-### I build systems that turn messy media, infrastructure, and AI workflows into products that ship.
+### building media infra, AI workflows, and small sharp tools
 
-<img src="./assets/github-line-velocity.svg" alt="Daily GitHub code line velocity graph for Miles Low" width="100%" />
+<img src="./assets/github-line-velocity.svg" alt="Raw HTML-style GitHub code velocity graph for Miles Low" width="100%" />
 
 </div>
 
 ## GitHub Code Velocity
 
-This is a last-365-days count of authored GitHub commits across repositories available to my account, using default branches only. It excludes docs and artifact/data/model/media files like `.jsonl`, `.json`, `.txt`, `.md`, `.svg`, `.pt`, lock files, build output, and similar generated assets.
+Last 365 days. Includes code, `.json`, and `.jsonl`. Excludes `package.json`, docs, text dumps, SVGs, model files, locks, build output, media, and generated assets.
 
-- **697,010** code lines added
-- **3,433** commits counted
-- **299** active coding days
-- **33.8K** code lines on the biggest day
+`945,347` lines added · `3,433` commits · `299` active days · `257.6K` biggest day
 
-Private repository names and raw per-repo data are intentionally not published here.
+Private repo names and raw per-repo data are intentionally not published here.
