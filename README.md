@@ -4,17 +4,17 @@
 
 ### I build systems that turn messy media, infrastructure, and AI workflows into products that ship.
 
-<img src="./assets/github-line-velocity.svg" alt="Daily GitHub line velocity graph for Miles Low" width="100%" />
+<img src="./assets/github-line-velocity.svg" alt="Daily GitHub code line velocity graph for Miles Low" width="100%" />
 
 </div>
 
-## GitHub Line Velocity
+## GitHub Code Velocity
 
-I counted authored commits across the GitHub repositories available to my account, using default branches only. The headline number is additions from commits matching `mileslow`, `Miles Low`, or my GitHub noreply identity.
+This is a last-365-days count of authored GitHub commits across repositories available to my account, using default branches only. It excludes docs and artifact/data/model/media files like `.jsonl`, `.json`, `.txt`, `.md`, `.svg`, `.pt`, lock files, build output, and similar generated assets.
 
-- **6,640,701** lines added
-- **5,090** commits counted
-- **598** active coding days
-- **1.42M** lines on the biggest day
+- **697,010** code lines added
+- **3,433** commits counted
+- **299** active coding days
+- **33.8K** code lines on the biggest day
 
-The public aggregate data behind the graph lives in [`assets/github-line-stats.json`](./assets/github-line-stats.json). Private repository names are intentionally omitted.
+Private repository names and raw per-repo data are intentionally not published here.
