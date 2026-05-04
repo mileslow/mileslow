@@ -1,6 +1,6 @@
 <svg width="1000" height="340" viewBox="0 0 1000 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
 <title id="title">Miles Low GitHub velocity and token burn</title>
-<desc id="desc">Last 365 days of code additions, language breakdown, and token burn split between Cursor and Codex.</desc>
+<desc id="desc">Last 365 days of code additions, language breakdown, and token burn split by model.</desc>
 <style>
   text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; fill: #111; }
   .title { font-size: 28px; font-weight: 700; }
@@ -14,15 +14,22 @@
 <text x="54" y="52" class="title">10.68B tokens / 365 days</text>
 <text x="54" y="84" class="body">945.35K code lines · 3,433 commits · 299 active days</text>
 
-<g transform="translate(100 146) rotate(-90)">
-  <circle r="39" cx="0" cy="0" fill="none" stroke="#eee" stroke-width="18"/>
-  <circle r="39" cx="0" cy="0" fill="none" stroke="#111" stroke-width="18" stroke-dasharray="211.43 33.62" stroke-dashoffset="0"><title>Cursor: 9,215,105,360 tokens</title></circle>
-  <circle r="39" cx="0" cy="0" fill="none" stroke="#777" stroke-width="18" stroke-dasharray="33.62 211.43" stroke-dashoffset="-211.43"><title>Codex: 1,465,267,690 tokens</title></circle>
+<g>
+  <circle r="39" cx="100" cy="146" fill="none" stroke="#eee" stroke-width="18"/>
+  <path d="M 138.06 154.53 A 39 39 0 0 0 100.00 107.00" fill="none" stroke="#111" stroke-width="18"><title>claude-4.5-sonnet-thinking: 3,044,770,143 tokens</title></path>
+  <path d="M 111.02 183.41 A 39 39 0 0 0 138.06 154.53" fill="none" stroke="#333" stroke-width="18"><title>gpt-5.4-medium: 1,808,615,498 tokens</title></path>
+  <path d="M 85.06 182.03 A 39 39 0 0 0 111.02 183.41" fill="none" stroke="#555" stroke-width="18"><title>claude-opus-4-6: 1,154,830,879 tokens</title></path>
+  <path d="M 66.25 165.55 A 39 39 0 0 0 85.06 182.03" fill="none" stroke="#777" stroke-width="18"><title>claude-4-sonnet-thinking: 1,109,565,751 tokens</title></path>
+  <path d="M 61.31 150.91 A 39 39 0 0 0 66.25 165.55" fill="none" stroke="#999" stroke-width="18"><title>gpt-5.3-codex: 677,716,375 tokens</title></path>
+  <path d="M 100.00 107.00 A 39 39 0 0 0 61.31 150.91" fill="none" stroke="#cfcfcf" stroke-width="18"><title>other models: 2,884,874,404 tokens</title></path>
 </g>
-<text x="168" y="124" class="big">token burn</text>
-<text x="168" y="150" class="body">Cursor 9.22B (86.3%)</text>
-<text x="168" y="172" class="body">Codex 1.47B (13.7%)</text>
-<text x="168" y="194" class="tiny">known sources only</text>
+<text x="168" y="104" class="big">model split</text>
+<rect x="168" y="116" width="8" height="8" fill="#111"/><text x="184" y="126" class="body">claude 4.5-sonnet-thinking</text><text x="464" y="126" class="body">28.5%</text>
+<rect x="168" y="134" width="8" height="8" fill="#333"/><text x="184" y="144" class="body">gpt 5.4-medium</text><text x="464" y="144" class="body">16.9%</text>
+<rect x="168" y="152" width="8" height="8" fill="#555"/><text x="184" y="162" class="body">claude opus-4-6</text><text x="464" y="162" class="body">10.8%</text>
+<rect x="168" y="170" width="8" height="8" fill="#777"/><text x="184" y="180" class="body">claude 4-sonnet-thinking</text><text x="464" y="180" class="body">10.4%</text>
+<rect x="168" y="188" width="8" height="8" fill="#999"/><text x="184" y="198" class="body">gpt 5.3-codex</text><text x="464" y="198" class="body">6.3%</text>
+<text x="168" y="222" class="tiny">other models 27.0%</text>
 
 <text x="620" y="52" class="body">languages</text>
 <text x="620" y="84" class="body">TypeScript</text><text x="742" y="84" class="body"> 314,249</text><text x="840" y="84" class="body">33.2%</text><rect x="900" y="74" width="142" height="9" fill="#111"/>
