@@ -1,27 +1,39 @@
 <svg width="1000" height="320" viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-<title id="title">Miles Low GitHub velocity and token burn</title>
-<desc id="desc">Last 365 days of additions with a simple daily graph and model token breakdown.</desc>
+<title id="title">Miles Low GitHub velocity, languages, and model split</title>
+<desc id="desc">Last 365 days of additions with a language summary and model usage donut chart.</desc>
 <style>
   text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; fill: #111; }
   .title { font-size: 28px; font-weight: 700; }
   .body { font-size: 14px; }
+  .small { font-size: 12px; }
   .tiny { font-size: 11px; fill: #666; }
   .axis { stroke: #111; stroke-width: 1; shape-rendering: crispEdges; }
   .bar { stroke: #111; stroke-width: 2; opacity: 0.42; shape-rendering: crispEdges; }
 </style>
 <rect width="1000" height="320" fill="#fff"/>
 <text x="54" y="52" class="title">945.3K lines / 365 days</text>
-<text x="54" y="84" class="body">3,433 commits · 299 active days · 10.68B tokens</text>
-<text x="54" y="122" class="body">model breakdown</text>
-<text x="54" y="146" class="body">claude 4.5-sonnet-thinking 28.5% · gpt 5.4-medium 16.9%</text>
-<text x="54" y="170" class="body">opus 4-6 10.8% · claude 4-sonnet-thinking 10.4% · codex 6.3% · other 27.0%</text>
-<text x="620" y="62" class="body">model</text><text x="840" y="62" class="body">% of tokens</text>
-<text x="620" y="84" class="body">claude 4.5-sonnet</text><text x="840" y="84" class="body">28.5%</text><rect x="900" y="74" width="142" height="9" fill="#111"/>
-<text x="620" y="104" class="body">gpt 5.4-medium</text><text x="840" y="104" class="body">16.9%</text><rect x="900" y="94" width="84" height="9" fill="#111"/>
-<text x="620" y="124" class="body">claude opus-4-6</text><text x="840" y="124" class="body">10.8%</text><rect x="900" y="114" width="54" height="9" fill="#111"/>
-<text x="620" y="144" class="body">claude 4-sonnet</text><text x="840" y="144" class="body">10.4%</text><rect x="900" y="134" width="52" height="9" fill="#111"/>
-<text x="620" y="164" class="body">gpt 5.3-codex</text><text x="840" y="164" class="body">6.3%</text><rect x="900" y="154" width="31" height="9" fill="#111"/>
-<text x="620" y="184" class="body">other models</text><text x="840" y="184" class="body">27.0%</text><rect x="900" y="174" width="135" height="9" fill="#111"/>
+<text x="54" y="84" class="body">4,381 contributions · 299 active days · 10.68B tokens</text>
+<text x="54" y="122" class="small">languages</text>
+<text x="54" y="144" class="small">TypeScript</text><text x="150" y="144" class="small">397K</text><rect x="198" y="135" width="170" height="8" fill="#111"/>
+<text x="54" y="162" class="small">Python</text><text x="150" y="162" class="small">270K</text><rect x="198" y="153" width="116" height="8" fill="#111"/>
+<text x="54" y="180" class="small">JavaScript</text><text x="150" y="180" class="small">235K</text><rect x="198" y="171" width="101" height="8" fill="#111"/>
+<text x="384" y="144" class="small">Shell</text><text x="440" y="144" class="small">29K</text><rect x="480" y="135" width="12" height="8" fill="#111"/>
+<text x="384" y="162" class="small">CSS</text><text x="440" y="162" class="small">5K</text><rect x="480" y="153" width="3" height="8" fill="#111"/>
+<text x="384" y="180" class="small">Other</text><text x="440" y="180" class="small">5K</text><rect x="480" y="171" width="3" height="8" fill="#111"/>
+<text x="660" y="62" class="body">model breakdown</text>
+<circle cx="718" cy="132" r="48" fill="none" stroke="#f2f2f2" stroke-width="22"/>
+<circle cx="718" cy="132" r="48" fill="none" stroke="#111" stroke-width="22" pathLength="100" stroke-dasharray="28.5 71.5" stroke-dashoffset="0" transform="rotate(-90 718 132)"><title>claude 4.5-sonnet-thinking: 28.5%</title></circle>
+<circle cx="718" cy="132" r="48" fill="none" stroke="#444" stroke-width="22" pathLength="100" stroke-dasharray="16.9 83.1" stroke-dashoffset="-28.5" transform="rotate(-90 718 132)"><title>gpt 5.4-medium: 16.9%</title></circle>
+<circle cx="718" cy="132" r="48" fill="none" stroke="#666" stroke-width="22" pathLength="100" stroke-dasharray="10.8 89.2" stroke-dashoffset="-45.4" transform="rotate(-90 718 132)"><title>opus 4-6: 10.8%</title></circle>
+<circle cx="718" cy="132" r="48" fill="none" stroke="#888" stroke-width="22" pathLength="100" stroke-dasharray="10.4 89.6" stroke-dashoffset="-56.2" transform="rotate(-90 718 132)"><title>claude 4-sonnet-thinking: 10.4%</title></circle>
+<circle cx="718" cy="132" r="48" fill="none" stroke="#aaa" stroke-width="22" pathLength="100" stroke-dasharray="6.3 93.7" stroke-dashoffset="-66.6" transform="rotate(-90 718 132)"><title>codex: 6.3%</title></circle>
+<circle cx="718" cy="132" r="48" fill="none" stroke="#ccc" stroke-width="22" pathLength="100" stroke-dasharray="27.0 73.0" stroke-dashoffset="-72.9" transform="rotate(-90 718 132)"><title>other models: 27.0%</title></circle>
+<text x="806" y="84" class="tiny">claude 4.5-sonnet 28.5%</text>
+<text x="806" y="104" class="tiny">gpt 5.4-medium 16.9%</text>
+<text x="806" y="124" class="tiny">opus 4-6 10.8%</text>
+<text x="806" y="144" class="tiny">claude 4-sonnet 10.4%</text>
+<text x="806" y="164" class="tiny">codex 6.3%</text>
+<text x="806" y="184" class="tiny">other 27.0%</text>
 <line x1="54" y1="284" x2="964" y2="284" class="axis"/>
 <line x1="54.0" y1="284" x2="54.0" y2="236.7" class="bar"><title>2025-05-04: 1,910 additions</title></line>
 <line x1="59.0" y1="284" x2="59.0" y2="235.3" class="bar"><title>2025-05-06: 2,379 additions</title></line>
